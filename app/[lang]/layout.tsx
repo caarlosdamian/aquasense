@@ -45,7 +45,7 @@ export default async function RootLayout({
   if (!hasLocale(lang)) notFound();
 
   return (
-    <html lang={lang} suppressHydrationWarning>
+    <html lang={lang} className="scroll-smooth" suppressHydrationWarning>
       <head>
         {/* Prevent FOUC: apply theme class before React hydrates */}
         <script

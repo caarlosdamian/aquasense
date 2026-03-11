@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { getDictionary, hasLocale } from "./dictionaries";
-import HomeClient from "./home-client";
+import SectionRenderer from "@/app/components/section-renderer";
 
 export default async function Home({
   params,
@@ -11,5 +11,5 @@ export default async function Home({
   if (!hasLocale(lang)) notFound();
   const dict = await getDictionary(lang);
 
-  return <HomeClient dict={dict} />;
+  return <SectionRenderer dict={dict} lang={lang} />;
 }

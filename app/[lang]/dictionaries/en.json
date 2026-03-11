@@ -3,15 +3,219 @@
     "title": "AquaSense",
     "description": "Smart pool monitoring and management"
   },
-  "home": {
-    "heading": "To get started, edit the page.tsx file.",
-    "description": "Looking for a starting point or more instructions? Head over to",
-    "templates": "Templates",
-    "or": "or the",
-    "learning": "Learning",
-    "center": "center.",
-    "deployNow": "Deploy Now",
-    "documentation": "Documentation",
-    "toggleTheme": "Toggle theme"
+  "header": {
+    "brand": "AquaSense",
+    "nav": {
+      "features": "Features",
+      "howItWorks": "How It Works",
+      "contact": "Contact",
+      "schedule": "Schedule"
+    },
+    "toggleTheme": "Toggle theme",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "tagline": "Smart Pool Technology",
+    "title": "Monitor & Manage Your Pool Effortlessly",
+    "subtitle": "Real-time water quality monitoring, automated chemical balancing, and intelligent maintenance alerts — all from your phone.",
+    "primaryCta": "Get Started",
+    "secondaryCta": "Learn More"
+  },
+  "features": {
+    "sectionTag": "Features",
+    "title": "Everything You Need to Keep Your Pool Perfect",
+    "subtitle": "Our smart sensors and AI-powered platform take the guesswork out of pool maintenance.",
+    "items": [
+      {
+        "icon": "droplet",
+        "title": "Water Quality Monitoring",
+        "description": "Track pH, chlorine, alkalinity, and temperature in real-time with precision sensors."
+      },
+      {
+        "icon": "zap",
+        "title": "Automated Alerts",
+        "description": "Get instant notifications when water chemistry goes out of balance."
+      },
+      {
+        "icon": "bar-chart",
+        "title": "Analytics Dashboard",
+        "description": "Visualize trends and historical data to optimize your pool maintenance schedule."
+      },
+      {
+        "icon": "shield",
+        "title": "Chemical Balancing",
+        "description": "Receive precise dosing recommendations to keep your water safe and crystal clear."
+      },
+      {
+        "icon": "clock",
+        "title": "Maintenance Scheduling",
+        "description": "Automated reminders for filter cleaning, equipment checks, and seasonal tasks."
+      },
+      {
+        "icon": "smartphone",
+        "title": "Mobile Control",
+        "description": "Manage everything from anywhere with our intuitive mobile app."
+      }
+    ]
+  },
+  "howItWorks": {
+    "sectionTag": "How It Works",
+    "title": "Up and Running in Minutes",
+    "subtitle": "Three simple steps to smarter pool management.",
+    "steps": [
+      {
+        "step": "01",
+        "title": "Install the Sensor",
+        "description": "Place the AquaSense sensor in your pool. It takes less than 5 minutes — no tools required."
+      },
+      {
+        "step": "02",
+        "title": "Connect the App",
+        "description": "Download the app and pair your sensor via Bluetooth. Your dashboard populates instantly."
+      },
+      {
+        "step": "03",
+        "title": "Sit Back & Relax",
+        "description": "Receive real-time insights, automated alerts, and maintenance recommendations."
+      }
+    ]
+  },
+  "testimonials": {
+    "sectionTag": "Testimonials",
+    "title": "Loved by Pool Owners Everywhere",
+    "subtitle": "See what our customers have to say about their AquaSense experience.",
+    "items": [
+      {
+        "name": "Sarah Mitchell",
+        "role": "Homeowner, Austin TX",
+        "quote": "AquaSense completely changed how I manage my pool. I used to spend hours testing water — now it's all automatic and I get alerts right on my phone.",
+        "rating": 5
+      },
+      {
+        "name": "David Chen",
+        "role": "Property Manager",
+        "quote": "Managing multiple pools was a nightmare before AquaSense. The dashboard gives me a clear overview of every property in one place.",
+        "rating": 5
+      },
+      {
+        "name": "Maria González",
+        "role": "Homeowner, Miami FL",
+        "quote": "The chemical balancing recommendations alone have saved me hundreds of dollars. My pool has never looked better!",
+        "rating": 5
+      },
+      {
+        "name": "James Parker",
+        "role": "Pool Service Professional",
+        "quote": "I recommend AquaSense to all my clients. It makes my job easier and keeps their pools in top shape between visits.",
+        "rating": 4
+      },
+      {
+        "name": "Lisa Thompson",
+        "role": "Homeowner, Scottsdale AZ",
+        "quote": "Setup was incredibly easy — literally 5 minutes. The app is beautiful and the maintenance reminders are a lifesaver.",
+        "rating": 5
+      },
+      {
+        "name": "Robert Kim",
+        "role": "Resort Manager",
+        "quote": "Our guests constantly compliment the water quality since we started using AquaSense. It's been a game changer for our ratings.",
+        "rating": 5
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Transform Your Pool Experience?",
+    "subtitle": "Join thousands of pool owners who have made the switch to smart pool management.",
+    "primaryCta": "Start Free Trial",
+    "secondaryCta": "Contact Sales"
+  },
+  "contact": {
+    "sectionTag": "Contact Us",
+    "title": "Get in Touch",
+    "subtitle": "Have questions or need a custom solution? We'd love to hear from you.",
+    "form": {
+      "name": "Full Name",
+      "namePlaceholder": "John Doe",
+      "email": "Email Address",
+      "emailPlaceholder": "john@example.com",
+      "phone": "Phone Number",
+      "phonePlaceholder": "+1 (555) 000-0000",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your pool and what you're looking for...",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully! We'll get back to you shortly.",
+      "error": "Something went wrong. Please try again."
+    },
+    "info": {
+      "title": "Contact Information",
+      "address": "123 Pool Lane, Austin, TX 78701",
+      "phone": "+1 (555) 123-4567",
+      "email": "hello@aquasense.com",
+      "hours": "Mon – Fri: 9AM – 6PM CST"
+    },
+    "mapTitle": "Find Us"
+  },
+  "schedule": {
+    "sectionTag": "Book a Meeting",
+    "title": "Schedule a Free Consultation",
+    "subtitle": "Talk to our pool experts and discover how AquaSense can transform your pool management. Pick a time that works for you.",
+    "form": {
+      "name": "Your Name",
+      "namePlaceholder": "John Doe",
+      "email": "Email Address",
+      "emailPlaceholder": "john@example.com",
+      "date": "Preferred Date",
+      "time": "Preferred Time",
+      "topic": "Meeting Topic",
+      "topicPlaceholder": "I'd like to learn about...",
+      "topics": {
+        "demo": "Product Demo",
+        "pricing": "Pricing & Plans",
+        "installation": "Installation Help",
+        "custom": "Custom Solution",
+        "other": "Other"
+      },
+      "notes": "Additional Notes",
+      "notesPlaceholder": "Anything else we should know?",
+      "submit": "Book Meeting",
+      "sending": "Booking...",
+      "success": "Meeting request submitted! We'll confirm your slot via email shortly.",
+      "error": "Something went wrong. Please try again."
+    },
+    "benefits": [
+      {
+        "icon": "clock",
+        "title": "30-Minute Session",
+        "description": "Quick, focused conversation tailored to your needs."
+      },
+      {
+        "icon": "video",
+        "title": "Video or Phone",
+        "description": "Choose the format that works best for you."
+      },
+      {
+        "icon": "star",
+        "title": "Expert Advice",
+        "description": "Get personalized recommendations from our pool tech specialists."
+      }
+    ]
+  },
+  "footer": {
+    "brand": "AquaSense",
+    "tagline": "Smart pool monitoring for the modern homeowner.",
+    "product": "Product",
+    "company": "Company",
+    "companyLinks": {
+      "about": "About",
+      "blog": "Blog",
+      "careers": "Careers"
+    },
+    "support": "Support",
+    "supportLinks": {
+      "help": "Help Center",
+      "status": "Status"
+    },
+    "copyright": "© 2026 AquaSense. All rights reserved."
   }
 }

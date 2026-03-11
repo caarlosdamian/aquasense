@@ -3,15 +3,219 @@
     "title": "AquaSense",
     "description": "Monitoreo y gestión inteligente de piscinas"
   },
-  "home": {
-    "heading": "Para comenzar, edita el archivo page.tsx.",
-    "description": "¿Buscas un punto de partida o más instrucciones? Dirígete a",
-    "templates": "Plantillas",
-    "or": "o al",
-    "learning": "Centro de aprendizaje",
-    "center": ".",
-    "deployNow": "Desplegar Ahora",
-    "documentation": "Documentación",
-    "toggleTheme": "Cambiar tema"
+  "header": {
+    "brand": "AquaSense",
+    "nav": {
+      "features": "Características",
+      "howItWorks": "Cómo Funciona",
+      "contact": "Contacto",
+      "schedule": "Agendar"
+    },
+    "toggleTheme": "Cambiar tema",
+    "getStarted": "Comenzar"
+  },
+  "hero": {
+    "tagline": "Tecnología Inteligente para Piscinas",
+    "title": "Monitorea y Gestiona Tu Piscina Sin Esfuerzo",
+    "subtitle": "Monitoreo de calidad del agua en tiempo real, balanceo químico automatizado y alertas de mantenimiento inteligentes — todo desde tu teléfono.",
+    "primaryCta": "Comenzar",
+    "secondaryCta": "Saber Más"
+  },
+  "features": {
+    "sectionTag": "Características",
+    "title": "Todo lo Que Necesitas Para Mantener Tu Piscina Perfecta",
+    "subtitle": "Nuestros sensores inteligentes y plataforma con IA eliminan las conjeturas del mantenimiento de piscinas.",
+    "items": [
+      {
+        "icon": "droplet",
+        "title": "Monitoreo de Calidad del Agua",
+        "description": "Rastrea pH, cloro, alcalinidad y temperatura en tiempo real con sensores de precisión."
+      },
+      {
+        "icon": "zap",
+        "title": "Alertas Automáticas",
+        "description": "Recibe notificaciones instantáneas cuando la química del agua se desbalancee."
+      },
+      {
+        "icon": "bar-chart",
+        "title": "Panel de Análisis",
+        "description": "Visualiza tendencias y datos históricos para optimizar tu programa de mantenimiento."
+      },
+      {
+        "icon": "shield",
+        "title": "Balanceo Químico",
+        "description": "Recibe recomendaciones precisas de dosificación para mantener tu agua segura y cristalina."
+      },
+      {
+        "icon": "clock",
+        "title": "Programación de Mantenimiento",
+        "description": "Recordatorios automáticos para limpieza de filtros, revisión de equipos y tareas estacionales."
+      },
+      {
+        "icon": "smartphone",
+        "title": "Control Móvil",
+        "description": "Administra todo desde cualquier lugar con nuestra app móvil intuitiva."
+      }
+    ]
+  },
+  "howItWorks": {
+    "sectionTag": "Cómo Funciona",
+    "title": "Listo y Funcionando en Minutos",
+    "subtitle": "Tres simples pasos hacia una gestión de piscinas más inteligente.",
+    "steps": [
+      {
+        "step": "01",
+        "title": "Instala el Sensor",
+        "description": "Coloca el sensor AquaSense en tu piscina. Toma menos de 5 minutos — sin herramientas."
+      },
+      {
+        "step": "02",
+        "title": "Conecta la App",
+        "description": "Descarga la app y empareja tu sensor por Bluetooth. Tu panel se llena al instante."
+      },
+      {
+        "step": "03",
+        "title": "Relájate y Disfruta",
+        "description": "Recibe información en tiempo real, alertas automáticas y recomendaciones de mantenimiento."
+      }
+    ]
+  },
+  "testimonials": {
+    "sectionTag": "Testimonios",
+    "title": "Amado por Propietarios de Piscinas en Todas Partes",
+    "subtitle": "Descubre lo que nuestros clientes dicen sobre su experiencia con AquaSense.",
+    "items": [
+      {
+        "name": "Sarah Mitchell",
+        "role": "Propietaria, Austin TX",
+        "quote": "AquaSense cambió completamente la forma en que cuido mi piscina. Antes pasaba horas haciendo pruebas — ahora es todo automático y recibo alertas en mi teléfono.",
+        "rating": 5
+      },
+      {
+        "name": "David Chen",
+        "role": "Administrador de Propiedades",
+        "quote": "Administrar múltiples piscinas era una pesadilla antes de AquaSense. El panel me da una vista clara de cada propiedad en un solo lugar.",
+        "rating": 5
+      },
+      {
+        "name": "María González",
+        "role": "Propietaria, Miami FL",
+        "quote": "Solo las recomendaciones de balanceo químico me han ahorrado cientos de dólares. ¡Mi piscina nunca se había visto mejor!",
+        "rating": 5
+      },
+      {
+        "name": "James Parker",
+        "role": "Profesional de Servicio de Piscinas",
+        "quote": "Recomiendo AquaSense a todos mis clientes. Facilita mi trabajo y mantiene sus piscinas en óptimas condiciones entre visitas.",
+        "rating": 4
+      },
+      {
+        "name": "Lisa Thompson",
+        "role": "Propietaria, Scottsdale AZ",
+        "quote": "La instalación fue increíblemente fácil — literalmente 5 minutos. La app es hermosa y los recordatorios de mantenimiento son una salvación.",
+        "rating": 5
+      },
+      {
+        "name": "Robert Kim",
+        "role": "Gerente de Resort",
+        "quote": "Nuestros huéspedes constantemente elogian la calidad del agua desde que empezamos a usar AquaSense. Ha sido un cambio total para nuestras calificaciones.",
+        "rating": 5
+      }
+    ]
+  },
+  "cta": {
+    "title": "¿Listo Para Transformar Tu Experiencia con la Piscina?",
+    "subtitle": "Únete a miles de propietarios de piscinas que ya hicieron el cambio a la gestión inteligente.",
+    "primaryCta": "Prueba Gratis",
+    "secondaryCta": "Contactar Ventas"
+  },
+  "contact": {
+    "sectionTag": "Contáctanos",
+    "title": "Ponte en Contacto",
+    "subtitle": "¿Tienes preguntas o necesitas una solución personalizada? Nos encantaría saber de ti.",
+    "form": {
+      "name": "Nombre Completo",
+      "namePlaceholder": "Juan Pérez",
+      "email": "Correo Electrónico",
+      "emailPlaceholder": "juan@ejemplo.com",
+      "phone": "Número de Teléfono",
+      "phonePlaceholder": "+52 (555) 000-0000",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntanos sobre tu piscina y lo que buscas...",
+      "submit": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "success": "¡Mensaje enviado con éxito! Te responderemos pronto.",
+      "error": "Algo salió mal. Por favor, intenta de nuevo."
+    },
+    "info": {
+      "title": "Información de Contacto",
+      "address": "123 Pool Lane, Austin, TX 78701",
+      "phone": "+1 (555) 123-4567",
+      "email": "hello@aquasense.com",
+      "hours": "Lun – Vie: 9AM – 6PM CST"
+    },
+    "mapTitle": "Encuéntranos"
+  },
+  "schedule": {
+    "sectionTag": "Agenda una Reunión",
+    "title": "Agenda una Consulta Gratuita",
+    "subtitle": "Habla con nuestros expertos en piscinas y descubre cómo AquaSense puede transformar la gestión de tu piscina. Elige un horario que te convenga.",
+    "form": {
+      "name": "Tu Nombre",
+      "namePlaceholder": "Juan Pérez",
+      "email": "Correo Electrónico",
+      "emailPlaceholder": "juan@ejemplo.com",
+      "date": "Fecha Preferida",
+      "time": "Hora Preferida",
+      "topic": "Tema de la Reunión",
+      "topicPlaceholder": "Me gustaría conocer sobre...",
+      "topics": {
+        "demo": "Demo del Producto",
+        "pricing": "Precios y Planes",
+        "installation": "Ayuda con Instalación",
+        "custom": "Solución Personalizada",
+        "other": "Otro"
+      },
+      "notes": "Notas Adicionales",
+      "notesPlaceholder": "¿Algo más que debamos saber?",
+      "submit": "Agendar Reunión",
+      "sending": "Agendando...",
+      "success": "¡Solicitud de reunión enviada! Confirmaremos tu horario por correo pronto.",
+      "error": "Algo salió mal. Por favor, intenta de nuevo."
+    },
+    "benefits": [
+      {
+        "icon": "clock",
+        "title": "Sesión de 30 Minutos",
+        "description": "Conversación rápida y enfocada adaptada a tus necesidades."
+      },
+      {
+        "icon": "video",
+        "title": "Video o Teléfono",
+        "description": "Elige el formato que mejor te funcione."
+      },
+      {
+        "icon": "star",
+        "title": "Asesoría Experta",
+        "description": "Recibe recomendaciones personalizadas de nuestros especialistas."
+      }
+    ]
+  },
+  "footer": {
+    "brand": "AquaSense",
+    "tagline": "Monitoreo inteligente de piscinas para el propietario moderno.",
+    "product": "Producto",
+    "company": "Empresa",
+    "companyLinks": {
+      "about": "Acerca de",
+      "blog": "Blog",
+      "careers": "Empleos"
+    },
+    "support": "Soporte",
+    "supportLinks": {
+      "help": "Centro de Ayuda",
+      "status": "Estado"
+    },
+    "copyright": "© 2026 AquaSense. Todos los derechos reservados."
   }
 }

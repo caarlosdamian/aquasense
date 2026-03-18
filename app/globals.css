@@ -65,7 +65,7 @@
   --color-primary: var(--brand-primary-end);
   --color-primary-hover: var(--brand-primary-start);
   --color-primary-foreground: #ffffff;
-  
+
   --color-secondary: var(--brand-secondary);
   --color-secondary-foreground: #ffffff;
 
@@ -205,8 +205,13 @@ body {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-sans);
 }
 
 /* ---------- Scroll animations ---------- */
@@ -308,6 +313,7 @@ h1, h2, h3, h4, h5, h6 {
 html.dark .show-in-light {
   display: none !important;
 }
+
 html:not(.dark) .show-in-dark {
   display: none !important;
 }

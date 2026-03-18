@@ -11,14 +11,15 @@ interface CtaProps {
       secondaryCta: string;
     };
   };
+  sectionBg?: string;
 }
 
-export default function Cta({ dict }: CtaProps) {
+export default function Cta({ dict, sectionBg = "bg-surface" }: CtaProps) {
   const t = dict.cta;
   const ref = useScrollAnimation();
 
   return (
-    <section id="cta" ref={ref} className="bg-surface py-24 sm:py-32">
+    <section id="cta" ref={ref} className={`${sectionBg} py-24 sm:py-32`}>
       <div className="mx-auto max-w-4xl px-6 text-center">
         <div className="animate-on-scroll animate-scale rounded-2xl bg-gradient-to-br from-primary/10 via-accent to-primary/5 p-12 sm:p-16">
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">

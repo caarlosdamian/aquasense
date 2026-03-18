@@ -33,9 +33,10 @@ interface ContactProps {
       mapTitle: string;
     };
   };
+  sectionBg?: string;
 }
 
-export default function Contact({ dict }: ContactProps) {
+export default function Contact({ dict, sectionBg = "bg-background" }: ContactProps) {
   const t = dict.contact;
   const ref = useScrollAnimation();
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
@@ -67,7 +68,7 @@ export default function Contact({ dict }: ContactProps) {
   }
 
   return (
-    <section id="contact" ref={ref} className="bg-background py-24 sm:py-32">
+    <section id="contact" ref={ref} className={`${sectionBg} py-24 sm:py-32`}>
       <div className="mx-auto max-w-6xl px-6">
         {/* Section header */}
         <div className="mx-auto max-w-2xl text-center">

@@ -18,6 +18,7 @@ interface TestimonialsProps {
       items: Testimonial[];
     };
   };
+  sectionBg?: string;
 }
 
 function StarRating({ rating }: { rating: number }) {
@@ -44,12 +45,12 @@ function StarRating({ rating }: { rating: number }) {
   );
 }
 
-export default function Testimonials({ dict }: TestimonialsProps) {
+export default function Testimonials({ dict, sectionBg = "bg-surface" }: TestimonialsProps) {
   const t = dict.testimonials;
   const ref = useScrollAnimation();
 
   return (
-    <section id="testimonials" ref={ref} className="bg-surface py-24 sm:py-32">
+    <section id="testimonials" ref={ref} className={`${sectionBg} py-24 sm:py-32`}>
       <div className="mx-auto max-w-6xl px-6">
         {/* Section header */}
         <div className="mx-auto max-w-2xl text-center">

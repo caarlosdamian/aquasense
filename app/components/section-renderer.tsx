@@ -3,6 +3,7 @@
 import { sectionsConfig } from "@/app/config/sections.config";
 import type { SectionId } from "@/app/config/sections.config";
 import Header from "@/app/components/sections/header";
+import AlertBanner from "@/app/components/sections/alert-banner";
 import Hero from "@/app/components/sections/hero";
 import Features from "@/app/components/sections/features";
 import HowItWorks from "@/app/components/sections/how-it-works";
@@ -19,6 +20,7 @@ interface SectionRendererProps {
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const sectionComponents: Record<SectionId, React.ComponentType<any>> = {
+  alertBanner: AlertBanner,
   header: Header,
   hero: Hero,
   features: Features,
@@ -30,17 +32,37 @@ const sectionComponents: Record<SectionId, React.ComponentType<any>> = {
   footer: Footer,
 };
 
+/**
+ * Sections that own their own background (hero has an image, header/footer
+ * have their own styles). All others get a computed alternating bg.
+ */
+const SELF_STYLED: Set<SectionId> = new Set(["alertBanner", "header", "hero", "footer"]);
+
+const ALT_BG = ["bg-background", "bg-surface"] as const;
+
 export default function SectionRenderer({ dict, lang }: SectionRendererProps) {
   const activeSections = sectionsConfig.filter((s) => s.active);
+
+  // Count only body sections (not self-styled) to compute alternating index
+  let bodyIndex = 0;
 
   return (
     <>
       {activeSections.map((section) => {
         const Component = sectionComponents[section.id];
         if (!Component) return null;
-        return <Component key={section.id} dict={dict as any} lang={lang} />;
+
+        let extraProps: Record<string, unknown> = section.props ?? {};
+
+        if (!SELF_STYLED.has(section.id)) {
+          extraProps = { ...extraProps, sectionBg: ALT_BG[bodyIndex % 2] };
+          bodyIndex++;
+        }
+
+        return (
+          <Component key={section.id} dict={dict as any} lang={lang} {...extraProps} />
+        );
       })}
     </>
   );
 }
-

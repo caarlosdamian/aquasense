@@ -3,6 +3,10 @@
     "title": "AquaSense",
     "description": "Monitoreo y gestión inteligente de piscinas"
   },
+  "alertBanner": {
+    "message": "2026 | Plataforma Revolucionaria de Cuidado de Piscinas — Próximamente",
+    "linkLabel": "Saber más"
+  },
   "header": {
     "brand": "AquaSense",
     "nav": {
@@ -19,7 +23,8 @@
     "title": "Monitorea y Gestiona Tu Piscina Sin Esfuerzo",
     "subtitle": "Monitoreo de calidad del agua en tiempo real, balanceo químico automatizado y alertas de mantenimiento inteligentes — todo desde tu teléfono.",
     "primaryCta": "Comenzar",
-    "secondaryCta": "Saber Más"
+    "secondaryCta": "Saber Más",
+    "statusPill": "Química perfecta lograda"
   },
   "features": {
     "sectionTag": "Características",

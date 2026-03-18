@@ -35,6 +35,7 @@ interface ScheduleProps {
       benefits: Benefit[];
     };
   };
+  sectionBg?: string;
 }
 
 const benefitIcons: Record<string, React.ReactNode> = {
@@ -64,7 +65,7 @@ const TIME_SLOTS = [
   "05:00 PM", "05:30 PM",
 ];
 
-export default function Schedule({ dict }: ScheduleProps) {
+export default function Schedule({ dict, sectionBg = "bg-surface" }: ScheduleProps) {
   const t = dict.schedule;
   const ref = useScrollAnimation();
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
@@ -103,7 +104,7 @@ export default function Schedule({ dict }: ScheduleProps) {
   }
 
   return (
-    <section id="schedule" ref={ref} className="bg-surface py-24 sm:py-32">
+    <section id="schedule" ref={ref} className={`${sectionBg} py-24 sm:py-32`}>
       <div className="mx-auto max-w-6xl px-6">
         {/* Section header */}
         <div className="mx-auto max-w-2xl text-center">

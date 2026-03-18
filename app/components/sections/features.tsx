@@ -17,6 +17,7 @@ interface FeaturesProps {
       items: FeatureItem[];
     };
   };
+  sectionBg?: string;
 }
 
 const iconMap: Record<string, React.ReactNode> = {
@@ -52,12 +53,12 @@ const iconMap: Record<string, React.ReactNode> = {
   ),
 };
 
-export default function Features({ dict }: FeaturesProps) {
+export default function Features({ dict, sectionBg = "bg-surface" }: FeaturesProps) {
   const t = dict.features;
   const ref = useScrollAnimation();
 
   return (
-    <section id="features" ref={ref} className="bg-surface py-24 sm:py-32">
+    <section id="features" ref={ref} className={`${sectionBg} py-24 sm:py-32`}>
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <span className="animate-on-scroll mb-4 inline-block text-sm font-semibold tracking-wide text-primary">

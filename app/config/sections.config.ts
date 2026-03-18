@@ -24,7 +24,7 @@ export const sectionsConfig: SectionConfig[] = [
     active: true,
     props: {
       icon: '✦',
-      gradient: 'from-amber-500 via-orange-500 to-amber-400',
+      gradient: 'from-secondary via-secondary/90 to-secondary/80',
       dismissible: true,
       // href: '#cta',  // uncomment to make banner clickable
     },

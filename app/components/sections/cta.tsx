@@ -31,7 +31,7 @@ export default function Cta({ dict, sectionBg = "bg-surface" }: CtaProps) {
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
               href="#"
-              className="inline-flex h-12 items-center justify-center rounded-lg bg-primary px-8 text-sm font-semibold text-primary-foreground shadow-md transition-all hover:bg-primary-hover hover:shadow-lg"
+              className="inline-flex h-12 items-center justify-center rounded-lg bg-gradient-to-r from-primary-hover to-primary px-8 text-sm font-semibold text-primary-foreground shadow-md transition-all hover:scale-105 hover:opacity-90 hover:shadow-lg"
             >
               {t.primaryCta}
             </a>

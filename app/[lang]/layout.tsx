@@ -1,20 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import { notFound } from "next/navigation";
 import { hasLocale, getDictionary } from "./dictionaries";
 import { locales } from "@/app/i18n/config";
 import { ThemeProvider } from "@/app/components/theme-provider";
 import "../globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export async function generateStaticParams() {
   return locales.map((lang) => ({ lang }));
@@ -29,8 +18,45 @@ export async function generateMetadata({
   if (!hasLocale(lang)) return {};
   const dict = await getDictionary(lang);
   return {
-    title: dict.metadata.title,
+    title: {
+      template: `%s | ${dict.metadata.title}`,
+      default: dict.metadata.title,
+    },
     description: dict.metadata.description,
+    applicationName: "AquaSense Pool Services",
+    authors: [{ name: "AquaSense" }],
+    keywords: [
+      "pool services",
+      "custom pools",
+      "pool maintenance",
+      "smart pools",
+    ],
+    icons: {
+      icon: "/icon.png",
+      apple: "/apple-icon.png",
+    },
+    openGraph: {
+      title: dict.metadata.title,
+      description: dict.metadata.description,
+      url: "https://aquasense.com",
+      siteName: "AquaSense",
+      images: [
+        {
+          url: "/aquasense-branding/logo-aquasense-pool-services-1-01.png",
+          width: 800,
+          height: 600,
+          alt: "AquaSense Logo",
+        },
+      ],
+      locale: lang,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: dict.metadata.title,
+      description: dict.metadata.description,
+      images: ["/aquasense-branding/logo-aquasense-pool-services-1-01.png"],
+    },
   };
 }
 
@@ -65,9 +91,7 @@ export default async function RootLayout({
           }}
         />
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className="antialiased">
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>

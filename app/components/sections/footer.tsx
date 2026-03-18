@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { sectionsConfig } from "@/app/config/sections.config";
 import type { SectionId } from "@/app/config/sections.config";
 import { useScrollAnimation } from "@/app/hooks/use-scroll-animation";
@@ -100,7 +101,22 @@ export default function Footer({ dict }: FooterProps) {
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand column */}
           <div className="animate-on-scroll sm:col-span-2 lg:col-span-1">
-            <h3 className="text-lg font-bold text-foreground">{t.brand}</h3>
+            <div className="mb-4">
+              <Image
+                src="/aquasense-branding/logo-aquasense-pool-services-1-01.png"
+                alt={t.brand}
+                width={200}
+                height={60}
+                className="h-16 w-auto show-in-light"
+              />
+              <Image
+                src="/aquasense-branding/logo-aquasense-ps-blanco-1-01.png"
+                alt={t.brand}
+                width={200}
+                height={60}
+                className="h-16 w-auto show-in-dark"
+              />
+            </div>
             <p className="mt-3 text-sm leading-relaxed text-muted">{t.tagline}</p>
           </div>
 

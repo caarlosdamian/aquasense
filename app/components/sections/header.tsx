@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useTheme } from "@/app/components/theme-provider";
 
 interface HeaderProps {
@@ -27,8 +28,23 @@ export default function Header({ dict, lang }: HeaderProps) {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-        <Link href={`/${lang}`} className="text-xl font-bold text-foreground">
-          {t.brand}
+        <Link href={`/${lang}`} className="flex items-center gap-2">
+          <Image
+            src="/aquasense-branding/isotipo-aquasense-pool-services-1-01.png"
+            alt={t.brand}
+            width={200}
+            height={60}
+            className="h-12 w-auto show-in-light"
+            priority
+          />
+          <Image
+            src="/aquasense-branding/isotipo-aquasense-pool-services-1-01.png"
+            alt={t.brand}
+            width={200}
+            height={60}
+            className="h-12 w-auto show-in-dark"
+            priority
+          />
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
@@ -74,7 +90,7 @@ export default function Header({ dict, lang }: HeaderProps) {
 
           <a
             href="#cta"
-            className="hidden rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary-hover sm:inline-flex"
+            className="hidden rounded-md bg-gradient-to-r from-primary-hover to-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow-sm transition-all hover:scale-105 hover:opacity-90 hover:shadow-md sm:inline-flex"
           >
             {t.getStarted}
           </a>

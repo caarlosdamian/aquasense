@@ -249,7 +249,7 @@ export default function Schedule({ dict, sectionBg = "bg-surface" }: SchedulePro
                 <button
                   type="submit"
                   disabled={status === "sending"}
-                  className="inline-flex h-12 w-full items-center justify-center rounded-lg bg-primary px-8 text-sm font-semibold text-primary-foreground shadow-md transition-all hover:bg-primary-hover hover:shadow-lg disabled:opacity-60 disabled:cursor-not-allowed"
+                  className="inline-flex h-12 w-full items-center justify-center rounded-lg bg-gradient-to-r from-primary-hover to-primary px-8 text-sm font-semibold text-primary-foreground shadow-md transition-all hover:scale-[1.02] hover:opacity-90 hover:shadow-lg disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:scale-100"
                 >
                   {status === "sending" ? t.form.sending : t.form.submit}
                 </button>

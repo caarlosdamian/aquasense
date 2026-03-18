@@ -53,7 +53,7 @@ function HeroCentered({ t, ref }: { t: HeroProps["dict"]["hero"]; ref: React.Ref
         <div className="animate-on-scroll stagger-3 mt-10 flex flex-col gap-4 sm:flex-row">
           <a
             href="#cta"
-            className="inline-flex h-12 items-center justify-center rounded-lg bg-primary px-8 text-sm font-semibold text-primary-foreground shadow-md transition-all hover:bg-primary-hover hover:shadow-lg"
+            className="inline-flex h-12 items-center justify-center rounded-lg bg-gradient-to-r from-primary-hover to-primary px-8 text-sm font-semibold text-primary-foreground shadow-md transition-all hover:scale-105 hover:opacity-90 hover:shadow-lg"
           >
             {t.primaryCta}
           </a>
@@ -85,13 +85,16 @@ function HeroSplit({ t, ref }: { t: HeroProps["dict"]["hero"]; ref: React.RefObj
         {/* ── LEFT: CTA content ── */}
         <div className="animate-on-scroll order-1 flex flex-col items-start">
           {/* Tagline pill */}
-          <span className="mb-5 inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-primary">
+          <span className="mb-5 inline-flex items-center gap-2 rounded-full bg-secondary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-secondary">
             <span>⭐⭐⭐⭐⭐</span>
             <span>{t.tagline}</span>
           </span>
 
-          <h1 className="stagger-1 text-4xl font-extrabold leading-[1.1] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-            {t.title}
+          <h1 className="mb-6 max-w-4xl text-5xl font-extrabold tracking-tight sm:text-7xl">
+            <span className="bg-gradient-to-r from-primary-hover to-primary bg-clip-text text-transparent">
+              {t.title.split(' ').slice(0, 3).join(' ')}
+            </span>{' '}
+            {t.title.split(' ').slice(3).join(' ')}
           </h1>
 
           <p className="stagger-2 mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground">
@@ -117,7 +120,7 @@ function HeroSplit({ t, ref }: { t: HeroProps["dict"]["hero"]; ref: React.RefObj
           <div className="stagger-4 mt-10 flex flex-col gap-4 sm:flex-row">
             <a
               href="#cta"
-              className="inline-flex h-12 items-center justify-center rounded-lg bg-primary px-8 text-sm font-semibold text-primary-foreground shadow-md transition-all hover:bg-primary-hover hover:shadow-lg"
+              className="inline-flex h-12 items-center justify-center rounded-lg bg-gradient-to-r from-primary-hover to-primary px-8 text-sm font-semibold text-primary-foreground shadow-md transition-all hover:scale-105 hover:opacity-90 hover:shadow-lg"
             >
               {t.primaryCta} →
             </a>
@@ -135,7 +138,7 @@ function HeroSplit({ t, ref }: { t: HeroProps["dict"]["hero"]; ref: React.RefObj
           <div className="relative w-full max-w-lg">
             {/* Status pill */}
             <div className="absolute -top-4 left-6 z-10 flex items-center gap-2 rounded-full border border-border bg-surface-raised px-4 py-2 shadow-lg backdrop-blur-sm">
-              <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-green-500" />
+              <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-secondary" />
               <span className="text-sm font-medium text-foreground">🧪 {t.statusPill}</span>
             </div>
 

@@ -4,6 +4,7 @@ export type SectionId =
   | 'hero'
   | 'features'
   | 'howItWorks'
+  | 'gallery'
   | 'testimonials'
   | 'cta'
   | 'contact'
@@ -33,6 +34,7 @@ export const sectionsConfig: SectionConfig[] = [
   { id: 'hero', active: true, props: { variant: 'split' } },
   { id: 'features', active: true },
   { id: 'howItWorks', active: true },
+  { id: 'gallery', active: true },
   { id: 'testimonials', active: true },
   { id: 'cta', active: true },
   { id: 'contact', active: true },

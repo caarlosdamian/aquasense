@@ -12,6 +12,7 @@ import Cta from "@/app/components/sections/cta";
 import Contact from "@/app/components/sections/contact";
 import Schedule from "@/app/components/sections/schedule";
 import Footer from "@/app/components/sections/footer";
+import Gallery from "./sections/gallery";
 
 interface SectionRendererProps {
   dict: Record<string, unknown>;
@@ -25,6 +26,7 @@ const sectionComponents: Record<SectionId, React.ComponentType<any>> = {
   hero: Hero,
   features: Features,
   howItWorks: HowItWorks,
+  gallery: Gallery,
   testimonials: Testimonials,
   cta: Cta,
   contact: Contact,

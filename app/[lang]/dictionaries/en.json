@@ -222,5 +222,10 @@
       "status": "Status"
     },
     "copyright": "© 2026 AquaSense. All rights reserved."
+  },
+  "gallery": {
+    "sectionTag": "Our Work",
+    "title": "Stunning Pools We've Brought to Life",
+    "subtitle": "Browse our recent projects and see how AquaSense transforms ordinary backyards into extraordinary clear-water havens."
   }
 }

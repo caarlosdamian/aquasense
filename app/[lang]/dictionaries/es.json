@@ -222,5 +222,10 @@
       "status": "Estado"
     },
     "copyright": "© 2026 AquaSense. Todos los derechos reservados."
+  },
+  "gallery": {
+    "sectionTag": "Nuestro Trabajo",
+    "title": "Piscinas Impresionantes Que Hemos Creado",
+    "subtitle": "Explore nuestros proyectos recientes y vea cómo AquaSense transforma patios ordinarios en paraísos extraordinarios de aguas cristalinas."
   }
 }

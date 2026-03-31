@@ -23,7 +23,7 @@ const GALLERY_IMAGES = [
   { id: 6, src: "/pool.jpg", alt: "Custom AquaSense Pool 6" },
 ];
 
-export default function Gallery({ dict, sectionBg = "bg-background" }: GalleryProps) {
+export default function Gallery({ dict, sectionBg = "bg-transparent" }: GalleryProps) {
   const t = dict.gallery;
   const ref = useScrollAnimation();
 

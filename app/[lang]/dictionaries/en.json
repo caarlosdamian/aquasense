@@ -50,17 +50,8 @@
         "icon": "shield",
         "title": "Chemical Balancing",
         "description": "Receive precise dosing recommendations to keep your water safe and crystal clear."
-      },
-      {
-        "icon": "clock",
-        "title": "Maintenance Scheduling",
-        "description": "Automated reminders for filter cleaning, equipment checks, and seasonal tasks."
-      },
-      {
-        "icon": "smartphone",
-        "title": "Mobile Control",
-        "description": "Manage everything from anywhere with our intuitive mobile app."
       }
+  
     ]
   },
   "howItWorks": {
@@ -208,7 +199,7 @@
   },
   "footer": {
     "brand": "AquaSense",
-    "tagline": "Smart pool monitoring for the modern homeowner.",
+    "tagline": "Premium pool care solutions.",
     "product": "Product",
     "company": "Company",
     "companyLinks": {

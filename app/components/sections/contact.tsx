@@ -36,7 +36,7 @@ interface ContactProps {
   sectionBg?: string;
 }
 
-export default function Contact({ dict, sectionBg = "bg-background" }: ContactProps) {
+export default function Contact({ dict, sectionBg = "bg-transparent" }: ContactProps) {
   const t = dict.contact;
   const ref = useScrollAnimation();
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");

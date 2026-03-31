@@ -40,7 +40,7 @@ const sectionComponents: Record<SectionId, React.ComponentType<any>> = {
  */
 const SELF_STYLED: Set<SectionId> = new Set(["alertBanner", "header", "hero", "footer"]);
 
-const ALT_BG = ["bg-background", "bg-surface"] as const;
+const ALT_BG = ["bg-white/70", "bg-white/50"] as const;
 
 export default function SectionRenderer({ dict, lang }: SectionRendererProps) {
   const activeSections = sectionsConfig.filter((s) => s.active);
@@ -48,23 +48,41 @@ export default function SectionRenderer({ dict, lang }: SectionRendererProps) {
   // Count only body sections (not self-styled) to compute alternating index
   let bodyIndex = 0;
 
+  const chromeSections: typeof activeSections = [];
+  const mainSections: typeof activeSections = [];
+  let mainStarted = false;
+
+  for (const section of activeSections) {
+    if (!mainStarted && (section.id === "alertBanner" || section.id === "header")) {
+      chromeSections.push(section);
+    } else {
+      mainStarted = true;
+      mainSections.push(section);
+    }
+  }
+
+  function renderSection(section: (typeof activeSections)[0]) {
+    const Component = sectionComponents[section.id];
+    if (!Component) return null;
+
+    let extraProps: Record<string, unknown> = section.props ?? {};
+
+    if (!SELF_STYLED.has(section.id)) {
+      extraProps = { ...extraProps, sectionBg: ALT_BG[bodyIndex % 2] };
+      bodyIndex++;
+    }
+
+    return (
+      <Component key={section.id} dict={dict as any} lang={lang} {...extraProps} />
+    );
+  }
+
   return (
     <>
-      {activeSections.map((section) => {
-        const Component = sectionComponents[section.id];
-        if (!Component) return null;
-
-        let extraProps: Record<string, unknown> = section.props ?? {};
-
-        if (!SELF_STYLED.has(section.id)) {
-          extraProps = { ...extraProps, sectionBg: ALT_BG[bodyIndex % 2] };
-          bodyIndex++;
-        }
-
-        return (
-          <Component key={section.id} dict={dict as any} lang={lang} {...extraProps} />
-        );
-      })}
+      {chromeSections.map(renderSection)}
+      <main id="main-content" tabIndex={-1}>
+        {mainSections.map(renderSection)}
+      </main>
     </>
   );
 }

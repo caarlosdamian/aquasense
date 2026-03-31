@@ -65,7 +65,7 @@ const TIME_SLOTS = [
   "05:00 PM", "05:30 PM",
 ];
 
-export default function Schedule({ dict, sectionBg = "bg-surface" }: ScheduleProps) {
+export default function Schedule({ dict, sectionBg = "bg-transparent" }: ScheduleProps) {
   const t = dict.schedule;
   const ref = useScrollAnimation();
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");

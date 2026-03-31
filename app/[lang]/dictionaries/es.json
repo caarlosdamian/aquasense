@@ -50,16 +50,6 @@
         "icon": "shield",
         "title": "Balanceo Químico",
         "description": "Recibe recomendaciones precisas de dosificación para mantener tu agua segura y cristalina."
-      },
-      {
-        "icon": "clock",
-        "title": "Programación de Mantenimiento",
-        "description": "Recordatorios automáticos para limpieza de filtros, revisión de equipos y tareas estacionales."
-      },
-      {
-        "icon": "smartphone",
-        "title": "Control Móvil",
-        "description": "Administra todo desde cualquier lugar con nuestra app móvil intuitiva."
       }
     ]
   },
@@ -208,7 +198,7 @@
   },
   "footer": {
     "brand": "AquaSense",
-    "tagline": "Monitoreo inteligente de piscinas para el propietario moderno.",
+    "tagline": "Soluciones premium de cuidado de piscinas.",
     "product": "Producto",
     "company": "Empresa",
     "companyLinks": {

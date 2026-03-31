@@ -26,7 +26,7 @@ export default function Header({ dict, lang }: HeaderProps) {
   const t = dict.header;
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur-md">
+    <header className="sticky top-0 z-50 w-full border-b border-blue-100 bg-white/95 shadow-sm backdrop-blur-md dark:border-border dark:bg-background/95">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <Link href={`/${lang}`} className="flex items-center gap-2">
           <Image
@@ -48,24 +48,37 @@ export default function Header({ dict, lang }: HeaderProps) {
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
-          <a href="#features" className="text-sm text-muted transition-colors hover:text-foreground">
+          <a
+            href="#features"
+            className="text-sm font-medium text-slate-600 transition-colors hover:text-blue-600 dark:text-muted dark:hover:text-foreground"
+          >
             {t.nav.features}
           </a>
-          <a href="#how-it-works" className="text-sm text-muted transition-colors hover:text-foreground">
+          <a
+            href="#how-it-works"
+            className="text-sm font-medium text-slate-600 transition-colors hover:text-blue-600 dark:text-muted dark:hover:text-foreground"
+          >
             {t.nav.howItWorks}
           </a>
-          <a href="#contact" className="text-sm text-muted transition-colors hover:text-foreground">
+          <a
+            href="#contact"
+            className="text-sm font-medium text-slate-600 transition-colors hover:text-blue-600 dark:text-muted dark:hover:text-foreground"
+          >
             {t.nav.contact}
           </a>
-          <a href="#schedule" className="text-sm text-muted transition-colors hover:text-foreground">
+          <a
+            href="#schedule"
+            className="text-sm font-medium text-slate-600 transition-colors hover:text-blue-600 dark:text-muted dark:hover:text-foreground"
+          >
             {t.nav.schedule}
           </a>
         </nav>
 
         <div className="flex items-center gap-3">
+          {/* Theme toggle */}
           <button
             onClick={toggleTheme}
-            className="flex h-9 w-9 items-center justify-center rounded-md border border-border text-muted transition-colors hover:bg-accent hover:text-foreground"
+            className="flex h-9 w-9 items-center justify-center rounded-md border border-blue-100 text-slate-500 transition-colors hover:bg-blue-50 hover:text-blue-600 dark:border-border dark:text-muted dark:hover:bg-accent dark:hover:text-foreground"
             aria-label={t.toggleTheme}
             title={t.toggleTheme}
           >
@@ -80,17 +93,27 @@ export default function Header({ dict, lang }: HeaderProps) {
             )}
           </button>
 
+          {/* Language switcher */}
           <Link
             href={`/${lang === "en" ? "es" : "en"}`}
-            className="flex h-9 w-9 items-center justify-center rounded-md border border-border text-xs font-semibold text-muted transition-colors hover:bg-accent hover:text-foreground"
+            className="flex h-9 w-9 items-center justify-center rounded-md border border-blue-100 text-xs font-semibold text-slate-500 transition-colors hover:bg-blue-50 hover:text-blue-600 dark:border-border dark:text-muted dark:hover:bg-accent dark:hover:text-foreground"
             title={lang === "en" ? "Español" : "English"}
           >
             {lang === "en" ? "ES" : "EN"}
           </Link>
 
+          {/* Sign In — ghost */}
+          <a
+            href="#"
+            className="hidden rounded-md border border-blue-200 px-4 py-2 text-sm font-medium text-blue-600 transition-all hover:bg-blue-50 hover:scale-105 sm:inline-flex items-center dark:border-border dark:text-primary dark:hover:bg-accent"
+          >
+            Sign In
+          </a>
+
+          {/* Get Started — solid gradient */}
           <a
             href="#cta"
-            className="hidden rounded-md bg-gradient-to-r from-primary-hover to-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow-sm transition-all hover:scale-105 hover:opacity-90 hover:shadow-md sm:inline-flex"
+            className="hidden rounded-md bg-gradient-to-r from-blue-600 to-cyan-500 px-4 py-2 text-sm font-semibold text-white shadow-md transition-all hover:scale-105 hover:shadow-lg sm:inline-flex items-center"
           >
             {t.getStarted}
           </a>

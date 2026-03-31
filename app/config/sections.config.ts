@@ -24,10 +24,10 @@ export const sectionsConfig: SectionConfig[] = [
     id: 'alertBanner',
     active: true,
     props: {
-      icon: '✦',
-      gradient: 'from-secondary via-secondary/90 to-secondary/80',
+      icon: '🌊',
+      gradient: 'from-orange-500 via-amber-400 to-yellow-400',
       dismissible: true,
-      // href: '#cta',  // uncomment to make banner clickable
+      href: '#cta',  // uncomment to make banner clickable
     },
   },
   { id: 'header', active: true },

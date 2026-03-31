@@ -64,10 +64,10 @@ function HeroCentered({ t, ref }: { t: HeroProps["dict"]["hero"]; ref: React.Ref
 // ─── Split variant ───────────────────────────────────────────────────────────
 function HeroSplit({ t, ref }: { t: HeroProps["dict"]["hero"]; ref: React.RefObject<HTMLElement | null> }) {
   return (
-    <section ref={ref} className="relative overflow-visible bg-transparent">
-      {/* Ambient blobs */}
+    <section ref={ref} className="relative overflow-hidden bg-transparent">
+      {/* Ambient blobs — kept inside section with overflow-hidden */}
       <div className="pointer-events-none absolute -left-32 -top-32 h-[480px] w-[480px] rounded-full bg-blue-500/10 blur-3xl" />
-      <div className="pointer-events-none absolute -bottom-24 -right-24 h-[400px] w-[400px] rounded-full bg-cyan-400/15 blur-3xl" />
+      <div className="pointer-events-none absolute -bottom-24 right-0 h-[400px] w-[400px] rounded-full bg-cyan-400/15 blur-3xl" />
 
       {/* ── Floating background bubbles ── */}
       {/* Left side */}
@@ -95,7 +95,7 @@ function HeroSplit({ t, ref }: { t: HeroProps["dict"]["hero"]; ref: React.RefObj
             <span>{t.tagline}</span>
           </span>
 
-          <h1 className="mb-6 max-w-4xl text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl dark:text-foreground">
+          <h1 className="mb-6 w-full text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl dark:text-foreground">
             <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
               {t.title.split(" ").slice(0, 2).join(" ")}
             </span>{" "}

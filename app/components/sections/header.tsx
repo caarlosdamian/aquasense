@@ -30,19 +30,19 @@ export default function Header({ dict, lang }: HeaderProps) {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <Link href={`/${lang}`} className="flex items-center gap-2">
           <Image
-            src="/aquasense-branding/isotipo-aquasense-pool-services-1-01.png"
+            src="/aquasense-branding/logo-main-one.png"
             alt={t.brand}
             width={200}
-            height={60}
-            className="h-12 w-auto show-in-light"
+            height={100}
+            className="h-20 w-auto show-in-light"
             priority
           />
           <Image
-            src="/aquasense-branding/isotipo-aquasense-pool-services-1-01.png"
+            src="/aquasense-branding/logo-main-one.png"
             alt={t.brand}
             width={200}
-            height={60}
-            className="h-12 w-auto show-in-dark"
+            height={100}
+            className="h-20 w-auto show-in-dark"
             priority
           />
         </Link>
@@ -66,12 +66,12 @@ export default function Header({ dict, lang }: HeaderProps) {
           >
             {t.nav.contact}
           </a>
-          <a
+          {/* <a
             href="#schedule"
             className="text-sm font-medium text-slate-600 transition-colors hover:text-blue-600 dark:text-muted dark:hover:text-foreground"
           >
             {t.nav.schedule}
-          </a>
+          </a> */}
         </nav>
 
         <div className="flex items-center gap-3">

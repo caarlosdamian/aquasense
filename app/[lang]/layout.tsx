@@ -92,7 +92,7 @@ export default async function RootLayout({
           }}
         />
       </head>
-      <body className="antialiased relative">
+      <body className="antialiased relative overflow-x-hidden">
         <ThemeProvider>
           <a
             href="#main-content"

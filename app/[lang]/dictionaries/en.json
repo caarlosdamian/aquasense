@@ -4,8 +4,8 @@
     "description": "Smart pool monitoring and management"
   },
   "alertBanner": {
-    "message": "2026 | Revolutionary Pool Care Platform Coming Soon",
-    "linkLabel": "Learn more"
+    "message": "Get your first pool service FREE - limited Time !",
+    "linkLabel": "Claim offer"
   },
   "header": {
     "brand": "AquaSense",
@@ -20,8 +20,14 @@
   },
   "hero": {
     "tagline": "Smart Pool Technology",
-    "title": "Monitor & Manage Your Pool Effortlessly",
+    "title": "Where data,efficeny and transparency come toguether",
     "subtitle": "Real-time water quality monitoring, automated chemical balancing, and intelligent maintenance alerts — all from your phone.",
+    "highlights": [
+      { "icon": "📊", "label": "Weekly detailed reports" },
+      { "icon": "💧", "label": "Real-time water quality" },
+      { "icon": "🔔", "label": "Instant smart alerts" },
+      { "icon": "📱", "label": "Mobile app control" }
+    ],
     "primaryCta": "Get Started",
     "secondaryCta": "Learn More",
     "statusPill": "Perfect chemistry achieved"

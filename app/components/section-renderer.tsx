@@ -40,7 +40,7 @@ const sectionComponents: Record<SectionId, React.ComponentType<any>> = {
  */
 const SELF_STYLED: Set<SectionId> = new Set(["alertBanner", "header", "hero", "footer"]);
 
-const ALT_BG = ["bg-white/70", "bg-white/50"] as const;
+const ALT_BG = ["bg-surface-raised/70", "bg-surface/50"] as const;
 
 export default function SectionRenderer({ dict, lang }: SectionRendererProps) {
   const activeSections = sectionsConfig.filter((s) => s.active);

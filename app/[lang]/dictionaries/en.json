@@ -19,18 +19,34 @@
     "getStarted": "Get Started"
   },
   "hero": {
-    "tagline": "Smart Pool Technology",
-    "title": "Where data,efficeny and transparency come toguether",
-    "subtitle": "Real-time water quality monitoring, automated chemical balancing, and intelligent maintenance alerts — all from your phone.",
+    "brand": "Aquasense",
+    "tagline": "Smart Pool Service",
+    "title": "Where data, efficiency, and transparency come together.",
+    "note": "Save more compared to traditional pool services.",
     "highlights": [
-      { "icon": "📊", "label": "Weekly detailed reports" },
-      { "icon": "💧", "label": "Real-time water quality" },
-      { "icon": "🔔", "label": "Instant smart alerts" },
-      { "icon": "📱", "label": "Mobile app control" }
+      {
+        "icon": "clipboard",
+        "title": "Weekly detailed reports",
+        "description": "See your full report each week."
+      },
+      {
+        "icon": "droplets",
+        "title": "Pay fairly for each visit",
+        "description": "No flat fees. Just fair pricing."
+      },
+      {
+        "icon": "eye",
+        "title": "See exactly what was done",
+        "description": "Know what you paid for."
+      }
     ],
     "primaryCta": "Get Started",
-    "secondaryCta": "Learn More",
-    "statusPill": "Perfect chemistry achieved"
+    "secondaryCta": "How It Works",
+    "metrics": {
+      "ph": { "value": "8.2", "label": "pH Level" },
+      "chlorine": { "value": "2.5ppm", "label": "Chlorine" },
+      "temp": { "value": "85°F", "label": "Temperature" }
+    }
   },
   "features": {
     "sectionTag": "Features",

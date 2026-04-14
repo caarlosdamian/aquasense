@@ -19,12 +19,34 @@
     "getStarted": "Comenzar"
   },
   "hero": {
-    "tagline": "Tecnología Inteligente para Piscinas",
-    "title": "Monitorea y Gestiona Tu Piscina Sin Esfuerzo",
-    "subtitle": "Monitoreo de calidad del agua en tiempo real, balanceo químico automatizado y alertas de mantenimiento inteligentes — todo desde tu teléfono.",
+    "brand": "Aquasense",
+    "tagline": "Servicio Inteligente de Piscinas",
+    "title": "Donde la data, la eficiencia y la transparencia se unen.",
+    "note": "Ahorra más en comparación con los servicios de piscina tradicionales.",
+    "highlights": [
+      {
+        "icon": "clipboard",
+        "title": "Reportes semanales detallados",
+        "description": "Consulta tu reporte completo cada semana."
+      },
+      {
+        "icon": "droplets",
+        "title": "Paga lo justo por cada visita",
+        "description": "Sin tarifas fijas. Solo precios justos."
+      },
+      {
+        "icon": "eye",
+        "title": "Mira exactamente qué se hizo",
+        "description": "Sabe por qué pagaste."
+      }
+    ],
     "primaryCta": "Comenzar",
-    "secondaryCta": "Saber Más",
-    "statusPill": "Química perfecta lograda"
+    "secondaryCta": "Cómo Funciona",
+    "metrics": {
+      "ph": { "value": "8.2", "label": "Nivel de pH" },
+      "chlorine": { "value": "2.5ppm", "label": "Cloro" },
+      "temp": { "value": "85°F", "label": "Temperatura" }
+    }
   },
   "features": {
     "sectionTag": "Características",

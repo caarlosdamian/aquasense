@@ -4,6 +4,7 @@ import { hasLocale, getDictionary } from "./dictionaries";
 import { locales } from "@/app/i18n/config";
 import { ThemeProvider } from "@/app/components/theme-provider";
 import WaveBackground from "@/app/components/wave-background";
+import FloatingChat from "@/app/components/floating-chat";
 import "../globals.css";
 
 export async function generateStaticParams() {
@@ -83,7 +84,7 @@ export default async function RootLayout({
                   var theme = localStorage.getItem('theme') || 'system';
                   var resolved = theme;
                   if (theme === 'system') {
-                    resolved = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                     resolved = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
                   }
                   document.documentElement.classList.add(resolved);
                 } catch(e) {}
@@ -101,6 +102,7 @@ export default async function RootLayout({
             Skip to main content
           </a>
           <WaveBackground />
+          <FloatingChat />
           {children}
         </ThemeProvider>
       </body>

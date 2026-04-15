@@ -149,31 +149,29 @@
     "secondaryCta": "Contactar Ventas"
   },
   "contact": {
-    "sectionTag": "Contáctanos",
-    "title": "Ponte en Contacto",
-    "subtitle": "¿Tienes preguntas o necesitas una solución personalizada? Nos encantaría saber de ti.",
+    "sectionTag": "Comenzar",
+    "title": "Únete a Aquasense",
+    "subtitle": "Inicia tu membresía y configura tu piscina en pocos pasos.",
     "form": {
-      "name": "Nombre Completo",
-      "namePlaceholder": "Juan Pérez",
-      "email": "Correo Electrónico",
-      "emailPlaceholder": "juan@ejemplo.com",
-      "phone": "Número de Teléfono",
-      "phonePlaceholder": "+52 (555) 000-0000",
-      "message": "Mensaje",
-      "messagePlaceholder": "Cuéntanos sobre tu piscina y lo que buscas...",
-      "submit": "Enviar Mensaje",
-      "sending": "Enviando...",
-      "success": "¡Mensaje enviado con éxito! Te responderemos pronto.",
+      "stepLabel": "PASO 1 DE 3",
+      "emailPlaceholder": "Ingresa tu correo",
+      "passwordPlaceholder": "Crea una contraseña",
+      "confirmPasswordPlaceholder": "Confirma tu contraseña",
+      "submit": "Iniciar Mi Membresía",
+      "sending": "Procesando...",
+      "note": "Sin sorpresas — los precios y detalles se explican claramente antes de la activación.",
+      "passwordMismatch": "Las contraseñas no coinciden. Por favor, intenta de nuevo.",
+      "success": "¡Ya eres parte! Nos pondremos en contacto pronto.",
       "error": "Algo salió mal. Por favor, intenta de nuevo."
     },
     "info": {
-      "title": "Información de Contacto",
-      "address": "123 Pool Lane, Austin, TX 78701",
-      "phone": "+1 (555) 123-4567",
-      "email": "hello@aquasense.com",
-      "hours": "Lun – Vie: 9AM – 6PM CST"
-    },
-    "mapTitle": "Encuéntranos"
+      "tagline": "Simplemente tiene sentido",
+      "description": "Servicio inteligente de piscinas. Transparencia. Comunicación. Precios justos.",
+      "email": "admin@aquasenseservices.com",
+      "address": "Tucson, Arizona",
+      "hours": "Abierto todos los días: 8AM – 6PM",
+      "contactBtn": "Contáctanos"
+    }
   },
   "schedule": {
     "sectionTag": "Agenda una Reunión",
@@ -219,6 +217,85 @@
         "description": "Recibe recomendaciones personalizadas de nuestros especialistas."
       }
     ]
+  },
+  "join": {
+    "title": "Tu Membersía Comienza Aquí",
+    "subtitle": "Precios simples y transparentes. Sin sorpresas.",
+    "plans": {
+      "yearly": {
+        "price": "$49.99",
+        "label": "Membersía Anual",
+        "description": "Mejor valor — facturado una vez al año.",
+        "badge": "Mejor Valor",
+        "cta": "Seleccionar Anual"
+      },
+      "monthly": {
+        "price": "$69.99",
+        "label": "Servicio Mensual",
+        "description": "Facturación flexible mes a mes.",
+        "cta": "Seleccionar Mensual"
+      },
+      "perVisit": {
+        "prefix": "Desde tan solo",
+        "price": "$9",
+        "label": "por visita — químicos facturados por separado"
+      }
+    },
+    "nextSteps": {
+      "title": "¿Qué pasa después?",
+      "items": [
+        "Completas tu perfil de piscina",
+        "Agendamos tu primera visita",
+        "Recibes un reporte completo de tu piscina",
+        "Solo pagas por lo que recibe tu piscina."
+      ]
+    },
+    "footnote": "Sin contratos. Cancela cuando quieras. Total transparencia en cada visita.",
+    "stepLabel": "PASO 2 DE 3"
+  },
+  "profile": {
+    "title": "Cuéntanos sobre ti",
+    "subtitle": "Ayúdanos a entender tu piscina para poder agendar una visita de inspección.",
+    "stepLabel": "PASO 3 DE 3",
+    "basicInfo": {
+      "title": "Cuéntanos sobre ti",
+      "subtitle": "Información básica para agendar tu primera visita",
+      "fullNamePlaceholder": "Nombre Completo",
+      "phonePlaceholder": "Número de Teléfono",
+      "addressPlaceholder": "Dirección"
+    },
+    "poolShape": {
+      "title": "¿Cuál es la forma de tu piscina?",
+      "options": ["Cuadrada", "Rectangular", "Ovalada", "Irregular"],
+      "petNamePlaceholder": "Nombre de la Mascota (opcional)",
+      "petNote": "Te notificaremos antes de llegar para que las mascotas puedan asegurarse."
+    },
+    "gateAccess": {
+      "title": "¿Dónde podemos encontrar la puerta de tu patio trasero?",
+      "options": ["Puerta Izquierda", "Puerta Derecha", "Acceso Frontal", "Sin Puerta"],
+      "gateCodePlaceholder": "Código / Contraseña de la Puerta (opcional)",
+      "specialNotesLabel": "Notas Especiales (opcional)",
+      "specialNotesPlaceholder": "Cualquier detalle adicional para ayudar a nuestro equipo a acceder al área de la piscina."
+    },
+    "timePreference": {
+      "title": "¿Cuál es tu preferencia de horario?",
+      "slots": ["7:00 AM – 10:00 AM", "10:00 AM – 1:00 PM", "1:00 PM – 4:00 PM", "4:00 PM – 7:00 PM"],
+      "specialNotesLabel": "Notas Especiales (opcional)",
+      "specialNotesPlaceholder": "Cualquier rango de tiempo a evitar u otras preferencias."
+    },
+    "inspection": {
+      "title": "Tu primera visita es solo de inspección — sin cargos aún.",
+      "items": [
+        "Un técnico realiza una evaluación completa de tu piscina",
+        "Documentamos el equipo, materiales y condición",
+        "Recibes un reporte detallado con opciones de precios.",
+        "No hay cargos por servicio hasta que apruebes."
+      ]
+    },
+    "submit": "Agendar Mi Primera Visita",
+    "submitting": "Agendando...",
+    "success": "¡Todo listo! Confirmaremos tu visita pronto.",
+    "error": "Algo salió mal. Por favor, intenta de nuevo."
   },
   "footer": {
     "brand": "AquaSense",

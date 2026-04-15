@@ -149,31 +149,29 @@
     "secondaryCta": "Contact Sales"
   },
   "contact": {
-    "sectionTag": "Contact Us",
-    "title": "Get in Touch",
-    "subtitle": "Have questions or need a custom solution? We'd love to hear from you.",
+    "sectionTag": "Get Started",
+    "title": "Join Aquasense",
+    "subtitle": "Start your membership and set up your pool in just a few steps.",
     "form": {
-      "name": "Full Name",
-      "namePlaceholder": "John Doe",
-      "email": "Email Address",
-      "emailPlaceholder": "john@example.com",
-      "phone": "Phone Number",
-      "phonePlaceholder": "+1 (555) 000-0000",
-      "message": "Message",
-      "messagePlaceholder": "Tell us about your pool and what you're looking for...",
-      "submit": "Send Message",
-      "sending": "Sending...",
-      "success": "Message sent successfully! We'll get back to you shortly.",
+      "stepLabel": "STEP 1 OF 3",
+      "emailPlaceholder": "Enter your email",
+      "passwordPlaceholder": "Create a password",
+      "confirmPasswordPlaceholder": "Confirm your password",
+      "submit": "Start My Membership",
+      "sending": "Processing...",
+      "note": "No surprises — pricing and details are clearly explained before activation.",
+      "passwordMismatch": "Passwords do not match. Please try again.",
+      "success": "You're in! We'll be in touch shortly.",
       "error": "Something went wrong. Please try again."
     },
     "info": {
-      "title": "Contact Information",
-      "address": "123 Pool Lane, Austin, TX 78701",
-      "phone": "+1 (555) 123-4567",
-      "email": "hello@aquasense.com",
-      "hours": "Mon – Fri: 9AM – 6PM CST"
-    },
-    "mapTitle": "Find Us"
+      "tagline": "It just makes sense",
+      "description": "Smart pool service. Transparency. Communication. Fair pricing.",
+      "email": "admin@aquasenseservices.com",
+      "address": "Tucson, Arizona",
+      "hours": "Open daily: 8AM – 6PM",
+      "contactBtn": "Contact Us"
+    }
   },
   "schedule": {
     "sectionTag": "Book a Meeting",
@@ -219,6 +217,85 @@
         "description": "Get personalized recommendations from our pool tech specialists."
       }
     ]
+  },
+  "join": {
+    "title": "Your Membership Starts Here",
+    "subtitle": "Simple, transparent pricing. No surprises.",
+    "plans": {
+      "yearly": {
+        "price": "$49.99",
+        "label": "Yearly Membership",
+        "description": "Best value — billed once annually.",
+        "badge": "Best Value",
+        "cta": "Select Yearly"
+      },
+      "monthly": {
+        "price": "$69.99",
+        "label": "Monthly Service",
+        "description": "Flexible month-to-month billing.",
+        "cta": "Select Monthly"
+      },
+      "perVisit": {
+        "prefix": "As low as",
+        "price": "$9",
+        "label": "per visit — chemicals billed separately"
+      }
+    },
+    "nextSteps": {
+      "title": "What happens next:",
+      "items": [
+        "You complete your pool profile",
+        "We schedule your first visit",
+        "You receive a full pool report",
+        "You only pay for what your pool gets."
+      ]
+    },
+    "footnote": "No contracts. Cancel anytime. Full transparency on every visit.",
+    "stepLabel": "STEP 2 OF 3"
+  },
+  "profile": {
+    "title": "Let's get your basic info",
+    "subtitle": "Help us understand your pool so we can schedule an inspection visit.",
+    "stepLabel": "STEP 3 OF 3",
+    "basicInfo": {
+      "title": "Let's get your basic info",
+      "subtitle": "Basic information so we can schedule your first visit",
+      "fullNamePlaceholder": "Full Name",
+      "phonePlaceholder": "Phone Number",
+      "addressPlaceholder": "Address"
+    },
+    "poolShape": {
+      "title": "What is the shape of your pool?",
+      "options": ["Square", "Rectangular", "Oval", "Irregular"],
+      "petNamePlaceholder": "Pet's Name (optional)",
+      "petNote": "We'll notify you before arrival so pets can be secured safely."
+    },
+    "gateAccess": {
+      "title": "Where can we find the gate to your backyard?",
+      "options": ["Left Gate", "Right Gate", "Front Access", "No Gate"],
+      "gateCodePlaceholder": "Gate Code / Passcode (optional)",
+      "specialNotesLabel": "Special Notes (optional)",
+      "specialNotesPlaceholder": "Any additional details to help our team access the pool area safely."
+    },
+    "timePreference": {
+      "title": "What is your time preference?",
+      "slots": ["7:00 AM – 10:00 AM", "10:00 AM – 1:00 PM", "1:00 PM – 4:00 PM", "4:00 PM – 7:00 PM"],
+      "specialNotesLabel": "Special Notes (optional)",
+      "specialNotesPlaceholder": "Any specific time ranges to avoid or other preferences."
+    },
+    "inspection": {
+      "title": "Your first visit is inspection only — no charges yet.",
+      "items": [
+        "A technician performs a full pool assessment",
+        "We document equipment, materials, and condition",
+        "You receive a detailed report with pricing options.",
+        "No service charges until you approve."
+      ]
+    },
+    "submit": "Schedule My First Visit",
+    "submitting": "Scheduling...",
+    "success": "You're all set! We'll confirm your visit shortly.",
+    "error": "Something went wrong. Please try again."
   },
   "footer": {
     "brand": "AquaSense",

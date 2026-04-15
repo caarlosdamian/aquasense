@@ -118,43 +118,26 @@
   },
   "testimonials": {
     "sectionTag": "Testimonios",
-    "title": "Amado por Propietarios de Piscinas en Todas Partes",
-    "subtitle": "Descubre lo que nuestros clientes dicen sobre su experiencia con AquaSense.",
+    "title": "La Opción Confiable de los Propietarios en Tucson",
+    "subtitle": "Construido por un equipo reconocido por su confiabilidad, comunicación y servicio de calidad.",
+    "footerText": "Basado en experiencias reales de clientes de servicios realizados por nuestro equipo en Tucson.",
     "items": [
       {
-        "name": "Sarah Mitchell",
-        "role": "Propietaria, Austin TX",
-        "quote": "AquaSense cambió completamente la forma en que cuido mi piscina. Antes pasaba horas haciendo pruebas — ahora es todo automático y recibo alertas en mi teléfono.",
+        "name": "Cliente Verificado",
+        "role": "Tucson AZ",
+        "quote": "Muy profesionales y confiables. Excelente comunicación.",
         "rating": 5
       },
       {
-        "name": "David Chen",
-        "role": "Administrador de Propiedades",
-        "quote": "Administrar múltiples piscinas era una pesadilla antes de AquaSense. El panel me da una vista clara de cada propiedad en un solo lugar.",
+        "name": "Cliente Verificado",
+        "role": "Tucson AZ",
+        "quote": "Siempre hacen el trabajo correctamente.",
         "rating": 5
       },
       {
-        "name": "María González",
-        "role": "Propietaria, Miami FL",
-        "quote": "Solo las recomendaciones de balanceo químico me han ahorrado cientos de dólares. ¡Mi piscina nunca se había visto mejor!",
-        "rating": 5
-      },
-      {
-        "name": "James Parker",
-        "role": "Profesional de Servicio de Piscinas",
-        "quote": "Recomiendo AquaSense a todos mis clientes. Facilita mi trabajo y mantiene sus piscinas en óptimas condiciones entre visitas.",
-        "rating": 4
-      },
-      {
-        "name": "Lisa Thompson",
-        "role": "Propietaria, Scottsdale AZ",
-        "quote": "La instalación fue increíblemente fácil — literalmente 5 minutos. La app es hermosa y los recordatorios de mantenimiento son una salvación.",
-        "rating": 5
-      },
-      {
-        "name": "Robert Kim",
-        "role": "Gerente de Resort",
-        "quote": "Nuestros huéspedes constantemente elogian la calidad del agua desde que empezamos a usar AquaSense. Ha sido un cambio total para nuestras calificaciones.",
+        "name": "Cliente Verificado",
+        "role": "Tucson AZ",
+        "quote": "Puntuales, profesionales y con precios justos.",
         "rating": 5
       }
     ]

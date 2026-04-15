@@ -118,43 +118,26 @@
   },
   "testimonials": {
     "sectionTag": "Testimonials",
-    "title": "Loved by Pool Owners Everywhere",
-    "subtitle": "See what our customers have to say about their AquaSense experience.",
+    "title": "Trusted by Homeowners in Tucson",
+    "subtitle": "Built by a team known for reliability, communication, and quality service.",
+    "footerText": "Based on real customer experiences from services performed by our team in Tucson.",
     "items": [
       {
-        "name": "Sarah Mitchell",
-        "role": "Homeowner, Austin TX",
-        "quote": "AquaSense completely changed how I manage my pool. I used to spend hours testing water — now it's all automatic and I get alerts right on my phone.",
+        "name": "Verified Customer",
+        "role": "Tucson AZ",
+        "quote": "Very professional and reliable. Great communication.",
         "rating": 5
       },
       {
-        "name": "David Chen",
-        "role": "Property Manager",
-        "quote": "Managing multiple pools was a nightmare before AquaSense. The dashboard gives me a clear overview of every property in one place.",
+        "name": "Verified Customer",
+        "role": "Tucson AZ",
+        "quote": "They always do the job the right way.",
         "rating": 5
       },
       {
-        "name": "Maria González",
-        "role": "Homeowner, Miami FL",
-        "quote": "The chemical balancing recommendations alone have saved me hundreds of dollars. My pool has never looked better!",
-        "rating": 5
-      },
-      {
-        "name": "James Parker",
-        "role": "Pool Service Professional",
-        "quote": "I recommend AquaSense to all my clients. It makes my job easier and keeps their pools in top shape between visits.",
-        "rating": 4
-      },
-      {
-        "name": "Lisa Thompson",
-        "role": "Homeowner, Scottsdale AZ",
-        "quote": "Setup was incredibly easy — literally 5 minutes. The app is beautiful and the maintenance reminders are a lifesaver.",
-        "rating": 5
-      },
-      {
-        "name": "Robert Kim",
-        "role": "Resort Manager",
-        "quote": "Our guests constantly compliment the water quality since we started using AquaSense. It's been a game changer for our ratings.",
+        "name": "Verified Customer",
+        "role": "Tucson AZ",
+        "quote": "On time, professional, and fairly priced.",
         "rating": 5
       }
     ]

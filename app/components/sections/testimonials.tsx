@@ -46,7 +46,7 @@ function StarRating({ rating }: { rating: number }) {
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
-          className={i < rating ? "text-amber-400" : "text-slate-200 dark:text-border"}
+          className={i < rating ? "text-amber-400" : "text-slate-300 dark:text-border"}
         >
           <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
         </svg>
@@ -64,10 +64,10 @@ export default function Testimonials({ dict, sectionBg = "bg-transparent" }: Tes
       <div className="mx-auto max-w-6xl px-6">
         {/* Section header */}
         <div className="mx-auto max-w-2xl text-center">
-          <span className="animate-on-scroll mb-4 inline-block rounded-full bg-blue-100 px-4 py-1.5 text-sm font-semibold tracking-wide text-blue-600 dark:bg-blue-900/40 dark:text-blue-300">
+          <span className="animate-on-scroll mb-4 inline-block text-sm font-semibold tracking-wide text-primary uppercase">
             {t.sectionTag}
           </span>
-          <h2 className="animate-on-scroll stagger-1 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl dark:text-foreground">
+          <h2 className="animate-on-scroll stagger-1 text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl">
             {t.title}
           </h2>
           <p className="animate-on-scroll stagger-2 mt-4 text-lg leading-relaxed text-slate-500 dark:text-muted">

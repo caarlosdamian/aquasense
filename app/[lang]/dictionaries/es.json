@@ -50,52 +50,71 @@
   },
   "features": {
     "sectionTag": "Características",
-    "title": "Todo lo Que Necesitas Para Mantener Tu Piscina Perfecta",
-    "subtitle": "Nuestros sensores inteligentes y plataforma con IA eliminan las conjeturas del mantenimiento de piscinas.",
+    "title": "Todo lo Que Necesitas para un Cuidado Inteligente",
+    "subtitle": "Nuestro enfoque basado en datos y herramientas digitales elimina las suposiciones en el servicio de piscinas, brindándote claridad y eficiencia.",
     "items": [
       {
         "icon": "droplet",
-        "title": "Monitoreo de Calidad del Agua",
-        "description": "Rastrea pH, cloro, alcalinidad y temperatura en tiempo real con sensores de precisión."
+        "title": "Análisis y Seguimiento del Agua",
+        "description": "Medimos y registramos la química de tu piscina en cada visita usando herramientas digitales profesionales."
       },
       {
         "icon": "zap",
-        "title": "Alertas Automáticas",
-        "description": "Recibe notificaciones instantáneas cuando la química del agua se desbalancee."
+        "title": "Notificaciones Inteligentes",
+        "description": "Mantente informado con actualizaciones sobre tu piscina, visitas de servicio y cualquier cambio que requiera atención."
       },
       {
         "icon": "bar-chart",
-        "title": "Panel de Análisis",
-        "description": "Visualiza tendencias y datos históricos para optimizar tu programa de mantenimiento."
+        "title": "Historial de Servicio e Insights",
+        "description": "Accede a reportes detallados, historial de visitas y datos que ayudan a optimizar tu piscina con el tiempo."
       },
       {
         "icon": "shield",
-        "title": "Balanceo Químico",
-        "description": "Recibe recomendaciones precisas de dosificación para mantener tu agua segura y cristalina."
+        "title": "Tratamiento Químico Preciso",
+        "description": "Los químicos se aplican basados en mediciones reales, asegurando resultados eficientes, balanceados y consistentes."
       }
-    ]
+    ],
+    "bottomCard": {
+      "title": "Visitas Cómodas y Personalizadas",
+      "description": "Hacemos que el cuidado de tu piscina sea libre de estrés con notificaciones anticipadas, programación personalizada, instrucciones detalladas de acceso y protocolos amigables con mascotas para asegurar que cada visita sea cómoda para ti.",
+      "cta": "Experimenta un Servicio Sin Complicaciones"
+    }
   },
   "howItWorks": {
     "sectionTag": "Cómo Funciona",
-    "title": "Listo y Funcionando en Minutos",
-    "subtitle": "Tres simples pasos hacia una gestión de piscinas más inteligente.",
+    "title": "Cómo Funciona",
+    "subtitle": "Diseñado para ser eficiente desde el primer día.",
     "steps": [
       {
-        "step": "01",
-        "title": "Instala el Sensor",
-        "description": "Coloca el sensor AquaSense en tu piscina. Toma menos de 5 minutos — sin herramientas."
+        "step": "1",
+        "title": "Regístrate",
+        "description": "Únete a nosotros y cuéntanos sobre tu piscina, acceso y horarios."
       },
       {
-        "step": "02",
-        "title": "Conecta la App",
-        "description": "Descarga la app y empareja tu sensor por Bluetooth. Tu panel se llena al instante."
+        "step": "2",
+        "title": "Notificación",
+        "description": "Recibe una notificación cuando tu técnico esté en camino."
       },
       {
-        "step": "03",
-        "title": "Relájate y Disfruta",
-        "description": "Recibe información en tiempo real, alertas automáticas y recomendaciones de mantenimiento."
+        "step": "3",
+        "title": "Primera Visita y Configuración",
+        "description": "Verificamos y completamos el perfil de tu piscina en la primera visita."
+      },
+      {
+        "step": "4",
+        "title": "Servicio Semanal",
+        "description": "Recibe un servicio semanal adaptado a las necesidades de tu piscina."
+      },
+      {
+        "step": "5",
+        "title": "Precios Justos",
+        "description": "Paga solo por el trabajo realizado y los químicos utilizados."
       }
-    ]
+    ],
+    "bottomCard": {
+      "title": "Servicio Transparente y Eficiente",
+      "description": "Nuestro sistema está diseñado para maximizar la eficiencia y la equidad. Utilizamos datos de la configuración inicial y de cada visita para optimizar el uso de químicos y el tiempo de servicio, previniendo desperdicios y ahorrándote dinero. Continuamente mejoramos nuestra tecnología para mantener bajos tus costos y alto el nivel de servicio."
+    }
   },
   "testimonials": {
     "sectionTag": "Testimonios",

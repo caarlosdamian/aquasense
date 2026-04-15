@@ -50,53 +50,71 @@
   },
   "features": {
     "sectionTag": "Features",
-    "title": "Everything You Need to Keep Your Pool Perfect",
-    "subtitle": "Our smart sensors and AI-powered platform take the guesswork out of pool maintenance.",
+    "title": "Everything You Need for Smarter Pool Care",
+    "subtitle": "Our data-driven approach and digital tools remove the guesswork from pool service — giving you clarity and efficiency.",
     "items": [
       {
         "icon": "droplet",
-        "title": "Water Quality Monitoring",
-        "description": "Track pH, chlorine, alkalinity, and temperature in real-time with precision sensors."
+        "title": "Water Analysis & Tracking",
+        "description": "We measure and track your pool's chemistry during every visit using professional digital tools."
       },
       {
         "icon": "zap",
-        "title": "Automated Alerts",
-        "description": "Get instant notifications when water chemistry goes out of balance."
+        "title": "Smart Notifications",
+        "description": "Stay informed with updates about your pool, service visits, and any changes that need your attention."
       },
       {
         "icon": "bar-chart",
-        "title": "Analytics Dashboard",
-        "description": "Visualize trends and historical data to optimize your pool maintenance schedule."
+        "title": "Service History & Insights",
+        "description": "Access detailed reports, visit history, and data that help optimize your pool over time."
       },
       {
         "icon": "shield",
-        "title": "Chemical Balancing",
-        "description": "Receive precise dosing recommendations to keep your water safe and crystal clear."
+        "title": "Precise Chemical treatment",
+        "description": "Chemicals are applied based on real measurements — ensuring efficient, balanced, and consistent results."
       }
-  
-    ]
+    ],
+    "bottomCard": {
+      "title": "Convenient & Personalized Visits",
+      "description": "We make pool care stress-free with advance notifications, custom scheduling, detailed entry instructions, and pet-friendly protocols to ensure each visit is smooth and convenient for you.",
+      "cta": "Experience Hassle-Free Service"
+    }
   },
   "howItWorks": {
     "sectionTag": "How It Works",
-    "title": "Up and Running in Minutes",
-    "subtitle": "Three simple steps to smarter pool management.",
+    "title": "How It Works",
+    "subtitle": "Built for efficiency from day one.",
     "steps": [
       {
-        "step": "01",
-        "title": "Install the Sensor",
-        "description": "Place the AquaSense sensor in your pool. It takes less than 5 minutes — no tools required."
+        "step": "1",
+        "title": "Sign Up",
+        "description": "Join us and tell us about your pool, access, and schedule."
       },
       {
-        "step": "02",
-        "title": "Connect the App",
-        "description": "Download the app and pair your sensor via Bluetooth. Your dashboard populates instantly."
+        "step": "2",
+        "title": "Notification",
+        "description": "Get a notification when your technician is on the way."
       },
       {
-        "step": "03",
-        "title": "Sit Back & Relax",
-        "description": "Receive real-time insights, automated alerts, and maintenance recommendations."
+        "step": "3",
+        "title": "First Visit & Setup",
+        "description": "We verify and complete your pool's profile on the first visit."
+      },
+      {
+        "step": "4",
+        "title": "Weekly Service",
+        "description": "Receive weekly service tailored to your pool's needs."
+      },
+      {
+        "step": "5",
+        "title": "Fair Pricing",
+        "description": "Pay based on the work done and chemicals used."
       }
-    ]
+    ],
+    "bottomCard": {
+      "title": "Transparent & Efficient Service",
+      "description": "Our system is designed to maximize efficiency and fairness. We utilize data from the initial setup and each visit to optimize chemical use and service time, preventing waste and saving you money. We're always improving our technology to keep your costs down and service level high."
+    }
   },
   "testimonials": {
     "sectionTag": "Testimonials",

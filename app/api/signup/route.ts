@@ -23,6 +23,42 @@ export async function POST(request: Request) {
       timeSlot1, timeSlot2, timeNotes,
     } = body;
 
+    const { searchParams } = new URL(request.url);
+    const step = searchParams.get("step");
+
+    if (step === "1") {
+      if (!email) {
+        return NextResponse.json({ error: "Email is required." }, { status: 400 });
+      }
+
+      console.log("📩 New Step 1 signup:", body);
+
+      await transporter.sendMail({
+        from: `"AquaSense Signup" <${process.env.GOOGLE_EMAIL}>`,
+        to: process.env.GOOGLE_EMAIL,
+        subject: `New Lead: ${email}`,
+        text: `New Lead\n==========\nEmail: ${email}\nPhone: ${phone || "Not provided"}`.trim(),
+        html: `
+          <div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #f8fafc; padding: 40px 20px; color: #0f172a;">
+            <div style="max-width: 620px; margin: 0 auto; background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);">
+              <div style="background: linear-gradient(to right, #1d4ed8, #06b6d4); padding: 30px 40px; text-align: center;">
+                <h2 style="color: #ffffff; margin: 0; font-size: 24px; font-weight: bold; letter-spacing: 2px;">AQUASENSE</h2>
+                <p style="color: #bae6fd; margin: 8px 0 0 0; font-size: 14px;">New Lead (Step 1) 🚀</p>
+              </div>
+              <div style="padding: 32px 40px;">
+                <table style="width:100%; border-collapse:collapse; margin-bottom:28px;">
+                  <tr><td style="padding:6px 0; color:#64748b; width:100px;">✉️ Email</td><td style="padding:6px 0;"><a href="mailto:${email}" style="color:#06b6d4;">${email}</a></td></tr>
+                  <tr><td style="padding:6px 0; color:#64748b;">📞 Phone</td><td style="padding:6px 0; color:#0f172a;">${phone || "Not provided"}</td></tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        `,
+      });
+
+      return NextResponse.json({ success: true });
+    }
+
     if (!email || !fullName || !phone || !address) {
       return NextResponse.json(
         { error: "Email, full name, phone, and address are required." },
@@ -39,7 +75,7 @@ export async function POST(request: Request) {
       text: `
 New Membership Signup
 =====================
-Plan: ${selectedPlan === "yearly" ? "Yearly Membership ($49.99/yr)" : "Monthly Service ($69.99/mo)"}
+Plan: ${selectedPlan === "membership" ? "AquaSense Membership ($49.99/yr + $69.99/mo)" : selectedPlan === "yearly" ? "Yearly Membership ($49.99/yr)" : "Monthly Service ($69.99/mo)"}
 
 Contact Info
 ------------
@@ -80,7 +116,7 @@ Notes:   ${timeNotes || "None"}
                 <tr>
                   <td style="padding:16px 20px; font-size:13px; color:#64748b; font-weight:600; text-transform:uppercase; letter-spacing:1px;">Plan Selected</td>
                   <td style="padding:16px 20px; font-size:16px; font-weight:700; color:#1d4ed8;">
-                    ${selectedPlan === "yearly" ? "⭐ Yearly Membership — $49.99/yr" : "📆 Monthly Service — $69.99/mo"}
+                    ${selectedPlan === "membership" ? "💎 AquaSense Membership ($49.99/yr + $69.99/mo)" : selectedPlan === "yearly" ? "⭐ Yearly Membership — $49.99/yr" : "📆 Monthly Service — $69.99/mo"}
                   </td>
                 </tr>
               </table>

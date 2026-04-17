@@ -7,7 +7,7 @@ export interface SignupData {
   // Step 1
   email: string;
   // Step 2
-  selectedPlan: "yearly" | "monthly" | "";
+  selectedPlan: "yearly" | "monthly" | "membership" | "";
   // Step 3 – basic info
   fullName: string;
   phone: string;

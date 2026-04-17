@@ -139,6 +139,24 @@
         "role": "Tucson AZ",
         "quote": "On time, professional, and fairly priced.",
         "rating": 5
+      },
+      {
+        "name": "Verified Customer",
+        "role": "Tucson AZ",
+        "quote": "Excellent service and very knowledgeable technicians.",
+        "rating": 5
+      },
+      {
+        "name": "Verified Customer",
+        "role": "Tucson AZ",
+        "quote": "My pool has never looked better. Highly recommend!",
+        "rating": 5
+      },
+      {
+        "name": "Verified Customer",
+        "role": "Tucson AZ",
+        "quote": "Love the weekly reports, it gives me great peace of mind.",
+        "rating": 5
       }
     ]
   },
@@ -155,12 +173,10 @@
     "form": {
       "stepLabel": "STEP 1 OF 3",
       "emailPlaceholder": "Enter your email",
-      "passwordPlaceholder": "Create a password",
-      "confirmPasswordPlaceholder": "Confirm your password",
+      "phonePlaceholder": "Enter your phone number (optional)",
       "submit": "Start My Membership",
       "sending": "Processing...",
       "note": "No surprises — pricing and details are clearly explained before activation.",
-      "passwordMismatch": "Passwords do not match. Please try again.",
       "success": "You're in! We'll be in touch shortly.",
       "error": "Something went wrong. Please try again."
     },
@@ -221,23 +237,15 @@
   "join": {
     "title": "Your Membership Starts Here",
     "subtitle": "Simple, transparent pricing. No surprises.",
-    "plans": {
-      "yearly": {
-        "price": "$49.99",
-        "label": "Yearly Membership",
-        "description": "Best value — billed once annually.",
-        "badge": "Best Value",
-        "cta": "Select Yearly"
-      },
-      "monthly": {
-        "price": "$69.99",
-        "label": "Monthly Service",
-        "description": "Flexible month-to-month billing.",
-        "cta": "Select Monthly"
-      },
+    "plan": {
+      "annualFee": "$49.99/yr",
+      "monthlyFee": "$69.99/mo",
+      "label": "AquaSense Membership",
+      "description": "Annual membership fee and monthly service for complete pool care.",
+      "cta": "Become a Member",
       "perVisit": {
-        "prefix": "As low as",
-        "price": "$9",
+        "prefix": "Plus",
+        "price": "$9.99",
         "label": "per visit — chemicals billed separately"
       }
     },

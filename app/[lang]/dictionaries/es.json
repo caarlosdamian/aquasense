@@ -139,6 +139,24 @@
         "role": "Tucson AZ",
         "quote": "Puntuales, profesionales y con precios justos.",
         "rating": 5
+      },
+      {
+        "name": "Cliente Verificado",
+        "role": "Tucson AZ",
+        "quote": "Excelente servicio y técnicos con mucho conocimiento.",
+        "rating": 5
+      },
+      {
+        "name": "Cliente Verificado",
+        "role": "Tucson AZ",
+        "quote": "Mi piscina nunca se vio mejor. ¡Lo recomiendo ampliamente!",
+        "rating": 5
+      },
+      {
+        "name": "Cliente Verificado",
+        "role": "Tucson AZ",
+        "quote": "Me encantan los reportes semanales, me dan gran tranquilidad.",
+        "rating": 5
       }
     ]
   },
@@ -155,12 +173,10 @@
     "form": {
       "stepLabel": "PASO 1 DE 3",
       "emailPlaceholder": "Ingresa tu correo",
-      "passwordPlaceholder": "Crea una contraseña",
-      "confirmPasswordPlaceholder": "Confirma tu contraseña",
+      "phonePlaceholder": "Ingresa tu número de teléfono (opcional)",
       "submit": "Iniciar Mi Membresía",
       "sending": "Procesando...",
       "note": "Sin sorpresas — los precios y detalles se explican claramente antes de la activación.",
-      "passwordMismatch": "Las contraseñas no coinciden. Por favor, intenta de nuevo.",
       "success": "¡Ya eres parte! Nos pondremos en contacto pronto.",
       "error": "Algo salió mal. Por favor, intenta de nuevo."
     },
@@ -221,23 +237,15 @@
   "join": {
     "title": "Tu Membersía Comienza Aquí",
     "subtitle": "Precios simples y transparentes. Sin sorpresas.",
-    "plans": {
-      "yearly": {
-        "price": "$49.99",
-        "label": "Membersía Anual",
-        "description": "Mejor valor — facturado una vez al año.",
-        "badge": "Mejor Valor",
-        "cta": "Seleccionar Anual"
-      },
-      "monthly": {
-        "price": "$69.99",
-        "label": "Servicio Mensual",
-        "description": "Facturación flexible mes a mes.",
-        "cta": "Seleccionar Mensual"
-      },
+    "plan": {
+      "annualFee": "$49.99/año",
+      "monthlyFee": "$69.99/mes",
+      "label": "Membresía AquaSense",
+      "description": "Cuota anual de membresía y servicio mensual para el cuidado completo de su piscina.",
+      "cta": "Convertirse en Miembro",
       "perVisit": {
-        "prefix": "Desde tan solo",
-        "price": "$9",
+        "prefix": "Más",
+        "price": "$9.99",
         "label": "por visita — químicos facturados por separado"
       }
     },

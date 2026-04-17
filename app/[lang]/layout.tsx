@@ -104,7 +104,7 @@ export default async function RootLayout({
               Skip to main content
             </a>
             <WaveBackground />
-            <FloatingChat />
+            {/* <FloatingChat /> */}
             {children}
           </SignupProvider>
         </ThemeProvider>

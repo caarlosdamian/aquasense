@@ -23,9 +23,12 @@ export default function JoinStep2({ dict, lang }: JoinStep2Props) {
   const t = dict.join as {
     title: string;
     subtitle: string;
-    plans: {
-      yearly: Plan;
-      monthly: Plan;
+    plan: {
+      annualFee: string;
+      monthlyFee: string;
+      label: string;
+      description: string;
+      cta: string;
       perVisit: { prefix: string; price: string; label: string };
     };
     nextSteps: { title: string; items: string[] };
@@ -33,8 +36,8 @@ export default function JoinStep2({ dict, lang }: JoinStep2Props) {
     stepLabel: string;
   };
 
-  function selectPlan(plan: "yearly" | "monthly") {
-    update({ selectedPlan: plan });
+  function proceed() {
+    update({ selectedPlan: "membership" });
     router.push(`/${lang}/join/profile`);
   }
 
@@ -49,53 +52,43 @@ export default function JoinStep2({ dict, lang }: JoinStep2Props) {
         <p className="mt-3 text-lg text-muted">{t.subtitle}</p>
       </div>
 
-      {/* Plan cards */}
-      <div className="w-full max-w-2xl space-y-4">
-        <div className="grid gap-4 sm:grid-cols-2">
-
-          {/* Yearly plan */}
-          <div className="relative flex flex-col rounded-2xl border-2 border-primary bg-surface-raised/80 p-6 shadow-md backdrop-blur-sm">
-            {t.plans.yearly.badge && (
-              <span className="mb-3 inline-block self-start rounded-full bg-gradient-to-r from-primary-hover to-primary px-3 py-0.5 text-xs font-bold text-primary-foreground">
-                {t.plans.yearly.badge}
-              </span>
-            )}
-            <p className="text-4xl font-extrabold tracking-tight text-foreground">
-              {t.plans.yearly.price}
-            </p>
-            <p className="mt-1 text-sm font-semibold text-foreground">{t.plans.yearly.label}</p>
-            <p className="mt-2 text-xs leading-relaxed text-muted">{t.plans.yearly.description}</p>
-            <button
-              onClick={() => selectPlan("yearly")}
-              className="mt-6 inline-flex h-11 w-full items-center justify-center rounded-lg bg-gradient-to-r from-primary-hover to-primary text-sm font-semibold text-primary-foreground shadow-md transition-all hover:scale-[1.02] hover:opacity-90"
-            >
-              {t.plans.yearly.cta}
-            </button>
+      {/* Plan card */}
+      <div className="w-full max-w-xl space-y-6">
+        <div className="relative flex flex-col rounded-2xl border-2 border-primary bg-surface-raised/80 p-8 shadow-md backdrop-blur-sm mx-auto text-center">
+          <p className="text-sm font-bold tracking-widest text-primary uppercase mb-2">{t.plan.label}</p>
+          <div className="flex flex-col items-center justify-center gap-1 mt-4 mb-2">
+            <div className="flex items-center gap-2 text-muted-foreground">
+              <span className="text-2xl font-bold">{t.plan.annualFee}</span>
+              <span className="text-xl">+</span>
+              <span className="text-2xl font-bold">{t.plan.monthlyFee}</span>
+            </div>
           </div>
-
-          {/* Monthly plan */}
-          <div className="flex flex-col rounded-2xl border border-border bg-surface-raised/80 p-6 shadow-sm backdrop-blur-sm">
-            <p className="text-4xl font-extrabold tracking-tight text-foreground">
-              {t.plans.monthly.price}
+          
+          <div className="my-6 rounded-xl bg-gradient-to-r from-primary-hover/10 to-primary/10 py-5 px-4 border border-primary/30 shadow-sm relative overflow-hidden">
+            <div className="absolute top-0 right-0 p-2 opacity-10">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <p className="relative text-sm font-semibold text-primary/80 uppercase tracking-wide mb-1">
+              {t.plan.perVisit.prefix}
             </p>
-            <p className="mt-1 text-sm font-semibold text-foreground">{t.plans.monthly.label}</p>
-            <p className="mt-2 text-xs leading-relaxed text-muted">{t.plans.monthly.description}</p>
-            <button
-              onClick={() => selectPlan("monthly")}
-              className="mt-6 inline-flex h-11 w-full items-center justify-center rounded-lg border border-border bg-surface text-sm font-semibold text-foreground shadow-sm transition-all hover:border-primary hover:text-primary"
-            >
-              {t.plans.monthly.cta}
-            </button>
+            <p className="relative text-primary font-bold">
+              <span className="text-5xl tracking-tighter">{t.plan.perVisit.price}</span>
+            </p>
+            <p className="relative mt-1 text-sm font-medium text-foreground/80">
+              {t.plan.perVisit.label}
+            </p>
           </div>
-
+          <p className="text-base leading-relaxed text-muted max-w-sm mx-auto mb-8">{t.plan.description}</p>
+          
+          <button
+            onClick={proceed}
+            className="inline-flex h-14 w-full items-center justify-center rounded-xl bg-gradient-to-r from-primary-hover to-primary text-base font-bold text-primary-foreground shadow-lg transition-all hover:scale-[1.02] hover:opacity-90"
+          >
+            {t.plan.cta}
+          </button>
         </div>
 
-        {/* Per-visit note */}
-        <p className="text-center text-sm text-muted">
-          {t.plans.perVisit.prefix}{" "}
-          <span className="font-bold text-foreground">{t.plans.perVisit.price}</span>{" "}
-          {t.plans.perVisit.label}
-        </p>
+        {/* No longer displaying the per visit note outside the card */}
 
         {/* What happens next */}
         <div className="rounded-2xl border border-border bg-surface-raised/80 p-6 backdrop-blur-sm">

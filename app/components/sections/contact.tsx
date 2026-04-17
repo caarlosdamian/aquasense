@@ -14,12 +14,10 @@ interface ContactProps {
       form: {
         stepLabel: string;
         emailPlaceholder: string;
-        passwordPlaceholder: string;
-        confirmPasswordPlaceholder: string;
+        phonePlaceholder: string;
         submit: string;
         sending: string;
         note: string;
-        passwordMismatch: string;
         success: string;
         error: string;
       };
@@ -43,20 +41,27 @@ export default function Contact({ dict, lang = "en", sectionBg = "bg-transparent
   const router = useRouter();
   const { update } = useSignup();
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
-  const [showPassword, setShowPassword] = useState(false);
-  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    setStatus("sending");
     const form = e.currentTarget;
-    const password = (form.elements.namedItem("password") as HTMLInputElement).value;
-    const confirmPassword = (form.elements.namedItem("confirmPassword") as HTMLInputElement).value;
-    if (password !== confirmPassword) {
-      setStatus("error");
-      return;
-    }
     const email = (form.elements.namedItem("email") as HTMLInputElement).value;
-    update({ email });
+    const phone = ((form.elements.namedItem("phone") as HTMLInputElement)?.value) || "";
+    
+    update({ email, phone });
+
+    try {
+      await fetch("/api/signup?step=1", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, phone }),
+      });
+    } catch {
+      // ignore
+    }
+
+    setStatus("idle");
     router.push(`/${lang}/join`);
   }
 
@@ -98,67 +103,14 @@ export default function Contact({ dict, lang = "en", sectionBg = "bg-transparent
                 className="w-full rounded-lg border border-border bg-surface-raised px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground outline-none transition-colors focus:border-primary focus:ring-2 focus:ring-primary/20"
               />
 
-              {/* Password */}
-              <div className="relative">
-                <input
-                  id="contact-password"
-                  name="password"
-                  type={showPassword ? "text" : "password"}
-                  required
-                  placeholder={t.form.passwordPlaceholder}
-                  className="w-full rounded-lg border border-border bg-surface-raised px-4 py-3 pr-12 text-sm text-foreground placeholder:text-muted-foreground outline-none transition-colors focus:border-primary focus:ring-2 focus:ring-primary/20"
-                />
-                <button
-                  type="button"
-                  onClick={() => setShowPassword(!showPassword)}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground transition-colors hover:text-foreground"
-                  aria-label="Toggle password visibility"
-                >
-                  {showPassword ? (
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94"/>
-                      <path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"/>
-                      <line x1="1" y1="1" x2="23" y2="23"/>
-                    </svg>
-                  ) : (
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
-                      <circle cx="12" cy="12" r="3"/>
-                    </svg>
-                  )}
-                </button>
-              </div>
-
-              {/* Confirm Password */}
-              <div className="relative">
-                <input
-                  id="contact-confirm-password"
-                  name="confirmPassword"
-                  type={showConfirmPassword ? "text" : "password"}
-                  required
-                  placeholder={t.form.confirmPasswordPlaceholder}
-                  className="w-full rounded-lg border border-border bg-surface-raised px-4 py-3 pr-12 text-sm text-foreground placeholder:text-muted-foreground outline-none transition-colors focus:border-primary focus:ring-2 focus:ring-primary/20"
-                />
-                <button
-                  type="button"
-                  onClick={() => setShowConfirmPassword(!showConfirmPassword)}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground transition-colors hover:text-foreground"
-                  aria-label="Toggle confirm password visibility"
-                >
-                  {showConfirmPassword ? (
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94"/>
-                      <path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"/>
-                      <line x1="1" y1="1" x2="23" y2="23"/>
-                    </svg>
-                  ) : (
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
-                      <circle cx="12" cy="12" r="3"/>
-                    </svg>
-                  )}
-                </button>
-              </div>
+              {/* Phone */}
+              <input
+                id="contact-phone"
+                name="phone"
+                type="tel"
+                placeholder={t.form.phonePlaceholder}
+                className="w-full rounded-lg border border-border bg-surface-raised px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground outline-none transition-colors focus:border-primary focus:ring-2 focus:ring-primary/20"
+              />
 
               {/* Submit */}
               <button
@@ -179,7 +131,7 @@ export default function Contact({ dict, lang = "en", sectionBg = "bg-transparent
               )}
               {status === "error" && (
                 <p className="text-sm font-medium text-destructive">
-                  {t.form.passwordMismatch}
+                  {t.form.error}
                 </p>
               )}
             </form>

@@ -122,7 +122,7 @@ export default function Features({ dict, sectionBg = "bg-transparent" }: Feature
 
             <div className="shrink-0 pt-4 lg:pt-0">
               <a
-                href="#schedule"
+                href="#contact"
                 className="inline-flex h-14 items-center justify-center rounded-full bg-blue-600 px-8 text-[0.95rem] font-bold text-white shadow-xl shadow-blue-500/20 transition-all hover:scale-105 hover:bg-blue-700"
               >
                 {t.bottomCard.cta}

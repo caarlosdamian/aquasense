@@ -27,7 +27,7 @@ export const sectionsConfig: SectionConfig[] = [
       icon: '🌊',
       gradient: 'from-orange-500 via-amber-400 to-yellow-400',
       dismissible: true,
-      href: '#cta',  // uncomment to make banner clickable
+      href: '#contact',
     },
   },
   { id: 'header', active: true },

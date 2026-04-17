@@ -95,7 +95,7 @@ export default function Footer({ dict }: FooterProps) {
       style={{ backgroundColor: "#0f172a" }}
     >
       <div className="mx-auto max-w-6xl px-6 py-16">
-        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3">
 
           {/* ── Brand column ── */}
           <div className="animate-on-scroll sm:col-span-2 lg:col-span-1">
@@ -149,18 +149,6 @@ export default function Footer({ dict }: FooterProps) {
               </ul>
             </div>
           )}
-
-          {/* ── Company column ── */}
-          <div className="animate-on-scroll stagger-2">
-            <h4 className="mb-4 text-sm font-bold uppercase tracking-wider text-white">
-              {t.company}
-            </h4>
-            <ul className="space-y-3">
-              <li><a href="#" className="text-sm text-slate-400 transition-colors hover:text-white">{t.companyLinks.about}</a></li>
-              <li><a href="#" className="text-sm text-slate-400 transition-colors hover:text-white">{t.companyLinks.careers ?? "Careers"}</a></li>
-              <li><a href="#" className="text-sm text-slate-400 transition-colors hover:text-white">{t.companyLinks.blog}</a></li>
-            </ul>
-          </div>
 
           {/* ── Contact column ── */}
           <div className="animate-on-scroll stagger-3">

@@ -170,7 +170,7 @@ function HeroSplit({ t, ref }: { t: HeroProps["dict"]["hero"]; ref: React.RefObj
 
           <div className="stagger-3 mt-12 flex flex-wrap gap-4">
             <a
-              href="#cta"
+              href="#contact"
               className="inline-flex h-14 items-center justify-center rounded-2xl bg-blue-600 px-10 text-base font-bold text-white shadow-xl shadow-blue-200 transition-all hover:bg-blue-700 hover:scale-[1.02] dark:shadow-none"
             >
               {t.primaryCta}
